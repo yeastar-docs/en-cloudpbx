@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"VoIP Trunk","shortdesc":"\n               <p class=\"shortdesc\">VoIP Trunks are phone lines that transmits calls over the Internet.</p>\n            ","id":"concept_kzd_png_tdb","href":"topic\/voip_trunk.html","menu": {"hasChildren":false,},"tocID":"concept_kzd_png_tdb-d46e7716","next":"concept_kzd_png_tdb-d46e7716",}]});

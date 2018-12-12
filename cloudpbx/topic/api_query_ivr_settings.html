@@ -1,0 +1,563 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../favicon.jpg"><!----></link><link rel="icon" href="../favicon.jpg"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Query IVR Settings" /><meta name="abstract" content="Query detailed information like IVR number, IVR name, keypress events, response timeout, etc. of one or more IVRs." /><meta name="description" content="Query detailed information like IVR number, IVR name, keypress events, response timeout, etc. of one or more IVRs." /><meta name="DC.Relation" scheme="URI" content="../topic/api_ivr.html" /><meta name="DC.Contributor" content="Carol" /><meta name="DC.Contributor" content="Yeastar" /><meta name="DC.Date.Modified" content="2018/05/21" /><meta name="DC.Date.Modified" content="2018/05/28" /><meta name="DC.Date.Modified" content="2018/05/30" /><meta name="DC.Date.Modified" content="2018/06/01" /><meta name="DC.Date.Modified" content="2018/06/05" /><meta name="DC.Date.Modified" content="2018/06/06" /><meta name="DC.Date.Modified" content="2018/06/07" /><meta name="DC.Date.Modified" content="2018/06/08" /><meta name="DC.Date.Modified" content="2018/06/11" /><meta name="DC.Date.Modified" content="2018/06/13" /><meta name="DC.Date.Modified" content="2018/06/14" /><meta name="DC.Date.Modified" content="2018/06/27" /><meta name="DC.Date.Modified" content="2018/07/23" /><meta name="DC.Date.Modified" content="2018/07/26" /><meta name="DC.Date.Modified" content="2018/07/27" /><meta name="DC.Date.Modified" content="2018/08/31" /><meta name="DC.Date.Modified" content="2018/09/03" /><meta name="DC.Date.Modified" content="2018/09/05" /><meta name="DC.Date.Modified" content="2018/09/11" /><meta name="DC.Date.Modified" content="2018/09/12" /><meta name="DC.Date.Modified" content="2018/10/09" /><meta name="DC.Date.Modified" content="2018/10/16" /><meta name="DC.Date.Modified" content="2018/10/17" /><meta name="DC.Date.Modified" content="2018/10/25" /><meta name="DC.Date.Modified" content="2018/11/26" /><meta name="DC.Date.Modified" content="2018/12/06" /><meta name="DC.Date.Modified" content="2018/12/12" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_t3n_2s2_gdb" /><title>Query IVR Settings</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018032809.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="reference_t3n_2s2_gdb-d46e25727" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018032809" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script>
+
+        <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+                
+                  
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2018032809" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-117711464-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <link rel="stylesheet" type="text/css" href="../yeastar.css" /></head>
+
+    <body class="wh_topic_page frmBody" id="reference_t3n_2s2_gdb">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        <nav class="header-menu">
+                <div class="log-and-content">
+                    <div>
+                    <div class="yeastar-log"><a href="https://www.yeastar.com/" title="yeastar"></a> 
+                     <a href="https://help.yeastar.com/en/cloudpbx"> Home </a>
+                    </div>
+                                      
+                    </div>   
+                    <div class="menu-content">
+                        <ul class="content-ul">
+                           
+
+                            <li class="language"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/language-1.png"><span>English</span>
+
+                                <ul>
+                                    <li class="mask-content">
+                                        <p class="mask"></p>
+                                        <ul class="lan-select">
+                                            <li><a href="https://help.yeastar.com/en/cloudpbx">English</a></li>
+                                             <li><a href="https://help.yeastar.com/zh-cn/cloudpbx">简体中文</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                </ul>
+                           </img> </li>
+                        </ul>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            </nav>
+        
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api.html">API Guide</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate a third-party software to the PBX via API interfaces.</p>
+               </span></span></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api_interfaces.html">API Interfaces</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API interfaces and API samples.</p>
+               </span></span></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api_ivr.html">IVR</a></span></span></li>
+   <li class="active"><span class="topicref"><span class="title"><a href="../topic/api_query_ivr_settings.html">Query IVR Settings</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Query detailed information like IVR number, IVR name, keypress events, response     timeout, etc. of one or more IVRs.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" title="Collapse sections"></button>
+                        
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul>
+   <li><span data-tocid="concept_u13_lwz_xdb-d46e24058" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api.html">API Guide</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate a third-party software to the PBX via API interfaces.</p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="concept_dxf_gr2_h2b-d46e24131" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/change_logs_of_api_version_cloud.html">Change Logs of API Version</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">When sending an API request, the request address must include the API version. All         request samples in this guide use
+                        {api version} to represent the API version.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_l4v_hrc_gdb-d46e24204" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_introduction.html">API Introduction</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"><span class="ph">Yeastar Cloud PBX</span> provides API interfaces for you to integrate a third-party     software or device.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_qt2_332_gdb-d46e24504" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_interfaces.html">API Interfaces</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API interfaces and API samples.</p>
+                     </span></span></span><ul class="nav nav-list">
+               <li><span data-tocid="topic_ex2_pld_gdb-d46e24577" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_authentication.html">API Authentication</a></span></span></li>
+               <li><span data-tocid="topic_ebw_ql2_gdb-d46e24863" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_system.html">System</a></span></span></li>
+               <li><span data-tocid="topic_yx3_gp2_gdb-d46e25006" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_extension.html">Extension</a></span></span></li>
+               <li><span data-tocid="topic_f1s_hp2_gdb-d46e25514" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_trunk.html">Trunk</a></span></span></li>
+               <li><span data-tocid="topic_ip5_kp2_gdb-d46e25657" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_ivr.html">IVR</a></span></span><ul class="nav nav-list">
+                     <li class="active"><span data-tocid="reference_t3n_2s2_gdb-d46e25727" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_query_ivr_settings.html">Query IVR Settings</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Query detailed information like IVR number, IVR name, keypress events, response     timeout, etc. of one or more IVRs.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_yyz_gs2_gdb-d46e25800" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_modify_an_ivr.html">Modify an IVR</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Configure the IVR settings, such as number, name, etc.</p>
+                                 </span></span></span></li>
+                  </ul>
+               </li>
+               <li><span data-tocid="topic_er2_mp2_gdb-d46e25873" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_queue.html">Queue</a></span></span></li>
+               <li><span data-tocid="topic_cf5_4p2_gdb-d46e26454" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_audio_calls.html">Audio Calls</a></span></span></li>
+               <li><span data-tocid="topic_kwp_npx_nfb-d46e28275" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_play_prompts.html">Play Prompts</a></span></span></li>
+               <li><span data-tocid="topic_bb1_3q2_gdb-d46e28491" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_get_recording_files.html">Get Recording Files</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, you can get auto recording files of the PBX.</p>
+                           </span></span></span></li>
+               <li><span data-tocid="topic_xxd_nq2_gdb-d46e28564" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_save_and_apply_settings.html">Save and Apply Settings</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">By default, when you configure the PBX settings via API interfaces, the settings will     be saved and applied automatically.
+                              To avoid that the changed settings not being applied, you     can invoke this interface to apply all settings after all settings
+                              are configured.
+                              
+                           </p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+         <li><span data-tocid="topic_dsn_qq2_gdb-d46e28637" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_system_report.html">System Report</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will send report to the application server automatically when there is a change     of system configuration or extension
+                        status, etc.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_wwt_sq2_gdb-d46e28923" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_call_report.html">Call Report</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will send call report to the application server automatically. Call event like     call transfer, call failure, call
+                        released, etc. will be reported.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="reference_rbf_yq2_gdb-d46e29943" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_error_code.html">Error Code</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API error codes.</p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Query IVR Settings</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Query detailed information like IVR number, IVR name, keypress events, response
+    timeout, etc. of one or more IVRs.</p>
+
+    <section class="section" id="reference_t3n_2s2_gdb__section_off_dnd_gdb"><h2 class="title sectiontitle">Request Address </h2>
+      
+      <p class="p">https://<code class="ph codeph">{pbx domain}</code>/api/<code class="ph codeph">{api
+          version}</code>/ivr/query?token=<code class="ph codeph">token</code></p>
+
+      
+      <div class="p">
+        <div class="note note"><span class="notetitle">Note:</span> For the <code class="ph codeph">{api version}</code>, you should add "v"
+          before the version number, e.g. <code class="ph codeph">v1.0.5</code>.</div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="reference_t3n_2s2_gdb__section_xc5_q4d_gdb"><h2 class="title sectiontitle">Request Parameters</h2>
+      
+      <div class="p">
+        <ul class="ul" id="reference_t3n_2s2_gdb__ul_yqw_dwj_gdb">
+          <li class="li">Sending no parameter means query all information.</li>
+
+          <li class="li">With parameters in request, developers could query specific information. Separate them
+            with <code class="ph codeph">,</code>. <p class="p">For example: <code class="ph codeph">{"ivrid":
+              "6500,6501,6502"}</code>.</p>
+</li>
+
+        </ul>
+
+      
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_t3n_2s2_gdb__table_abq_pvd_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:13.817330210772836%" /><col style="width:15.222482435597193%" /><col style="width:11.7096018735363%" /><col style="width:59.250585480093676%" /></colgroup><thead class="thead" style="text-align:left;">
+            <tr>
+              <th class="entry cellrowborder" id="d46919e156">Name</th>
+
+              <th class="entry cellrowborder" id="d46919e159">Importance</th>
+
+              <th class="entry cellrowborder" id="d46919e162"> Type</th>
+
+              <th class="entry cellrowborder" id="d46919e165"> Description</th>
+
+            </tr>
+
+          </thead>
+<tbody class="tbody">
+            <tr>
+              <td class="entry cellrowborder" headers="d46919e156 ">
+                <code class="ph codeph">ivrid</code>
+              </td>
+
+              <td class="entry cellrowborder" headers="d46919e159 ">Required</td>
+
+              <td class="entry cellrowborder" headers="d46919e162 ">String</td>
+
+              <td class="entry cellrowborder" headers="d46919e165 ">The IVR number.</td>
+
+            </tr>
+
+          </tbody>
+</table>
+</div>
+  </div>
+
+    </section>
+
+    <section class="section" id="reference_t3n_2s2_gdb__section_vjw_5qd_gdb"><h2 class="title sectiontitle">Response Parameters</h2>
+      
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_t3n_2s2_gdb__table_ufv_bj2_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:24.561403508771924%" /><col style="width:12.096029547553092%" /><col style="width:9.23361034164358%" /><col style="width:54.10895660203139%" /></colgroup><thead class="thead" style="text-align:left;">
+              <tr>
+                <th class="entry cellrowborder" id="d46919e219">Name </th>
+
+                <th class="entry cellrowborder" id="d46919e222">Importance</th>
+
+                <th class="entry cellrowborder" id="d46919e225">Type</th>
+
+                <th class="entry cellrowborder" id="d46919e228">Description</th>
+
+              </tr>
+
+            </thead>
+<tbody class="tbody">
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">status</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Required</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Request result:<ul class="ul" id="reference_t3n_2s2_gdb__ul_hfl_12r_52b">
+                    <li class="li">Failed.</li>
+
+                    <li class="li">Success.</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" colspan="4" headers="d46919e219 d46919e222 d46919e225 d46919e228 ">Request successful</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">ivrnumber</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">The IVR number.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">ivrname</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">The IVR name.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">prompt</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">The IVR prompt.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">promptrepeat</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">How many times will the prompt be repeated.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">responsetimeout</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">Int</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Response timeout in seconds.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">digittimeout</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">Int</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Digit timeout in seconds.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">dialext</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Allow the caller to dial extension.<ul class="ul" id="reference_t3n_2s2_gdb__ul_frn_nxj_gdb">
+                    <li class="li">on: enable.</li>
+
+                    <li class="li">off: disable.</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">dialoutboundroutes</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Allow the caller to dial through outbound routes.<ul class="ul">
+                    <li class="li">on: enable.</li>
+
+                    <li class="li">off: disable.</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">selectedrouters</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">The selected route.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">dialtocheckvoicemail</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Allow to check voicemail.<ul class="ul">
+                    <li class="li">on: enable </li>
+
+                    <li class="li">off: disable</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" colspan="4" headers="d46919e219 d46919e222 d46919e225 d46919e228 ">Request failed</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d46919e219 "><code class="ph codeph">errno</code></td>
+
+                <td class="entry cellrowborder" headers="d46919e222 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d46919e225 ">String</td>
+
+                <td class="entry cellrowborder" headers="d46919e228 ">Error code.</td>
+
+              </tr>
+
+            </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="reference_t3n_2s2_gdb__section_ksn_f4d_gdb"><h2 class="title sectiontitle">Examples</h2><strong class="ph b">Request Example</strong><div class="p">Query the settings of IVR 6500.<pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"ivrid"</span>: <span class="hl-string" style="color:#2a00ff">"6500"</span>
+}</pre></div>
+<strong class="ph b">Response Example</strong><div class="p">
+  <pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"status"</span>: <span class="hl-string" style="color:#2a00ff">"Success"</span>,
+    <span class="hl-json_key" style="color:#7263B9">"ivr"</span>: [
+        {
+            <span class="hl-json_key" style="color:#7263B9">"ivrnumber"</span>: <span class="hl-string" style="color:#2a00ff">"6500"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"ivrname"</span>: <span class="hl-string" style="color:#2a00ff">"6500"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"prompt"</span>: <span class="hl-string" style="color:#2a00ff">"[Default]"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"promptrepeat"</span>: <span class="hl-string" style="color:#2a00ff">"3"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"responsetimeout"</span>: <span class="hl-string" style="color:#2a00ff">"3"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"digittimeout"</span>: <span class="hl-string" style="color:#2a00ff">"3"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"dialext"</span>: <span class="hl-string" style="color:#2a00ff">"on"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"dialoutboundroutes"</span>: <span class="hl-string" style="color:#2a00ff">"off"</span>,
+            <span class="hl-json_key" style="color:#7263B9">"dialtocheckvoicemail"</span>: <span class="hl-string" style="color:#2a00ff">"off"</span>
+        }
+    ]
+}</pre>
+      </div>
+</section>
+
+  </div>
+
+</article></main></div>
+
+
+
+
+  
+
+
+
+
+                        
+                        
+<!-- 添加facebook -->
+<div id="fb-root"></div>
+<script>
+ <!-- 
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ -->
+</script>
+
+<div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-md hidden-sm hidden-xs navbar hidden-print"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#reference_t3n_2s2_gdb__section_off_dnd_gdb" data-tocid="reference_t3n_2s2_gdb__section_off_dnd_gdb">Request Address </a></div></li><li class="section-item"><div class="section-title"><a href="#reference_t3n_2s2_gdb__section_xc5_q4d_gdb" data-tocid="reference_t3n_2s2_gdb__section_xc5_q4d_gdb">Request Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_t3n_2s2_gdb__section_vjw_5qd_gdb" data-tocid="reference_t3n_2s2_gdb__section_vjw_5qd_gdb">Response Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_t3n_2s2_gdb__section_ksn_f4d_gdb" data-tocid="reference_t3n_2s2_gdb__section_ksn_f4d_gdb">Examples</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    <div class="footer-content">
+                <div class="content-area">
+                    <div class="footer-left">
+                            <span class="copy">Copyright 2006-2018 Yeastar Information Technology Co., Ltd.</span>
+                            <span class="contacts-nav">
+                                                      <a href="https://www.yeastar.com/legal/">Terms of Use </a>|
+                                                     <a href="https://www.yeastar.com/privacy/">Privacy Policy </a>|
+                                                     <a href="https://www.yeastar.com/cookie-policy/">Cookie Policy </a></span>
+                    </div>
+                    <div class="footer-right">
+                        <div class="right-content">
+                            <a href="https://support.yeastar.com/hc/en-us/community/topics" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/community.png" /> Community</a>
+                            <a href="https://support.yeastar.com/hc/en-us/requests/new" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/support.png" /> Support</a><a href="https://github.com/Yeastar-Document/en_cloudpbx/issues" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/feedback-1.png" /> Feedback</a>
+                        </div>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
+            </div>
+  </div>
+</nav>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <div style="display:none"> <script src="https://s95.cnzz.com/z_stat.php?id=5336919&amp;web_id=5336919/" language="JavaScript"></script></div>
+    </body>
+</html>

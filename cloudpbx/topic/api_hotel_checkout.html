@@ -1,0 +1,332 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../favicon.jpg"><!----></link><link rel="icon" href="../favicon.jpg"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Hotel Check Out" /><meta name="abstract" content="Through this interface, you can perform checkout for the hotel customers." /><meta name="description" content="Through this interface, you can perform checkout for the hotel customers." /><meta name="DC.Creator" content="Carol" /><meta name="DC.Date.Created" content="2018/10/22" /><meta name="DC.Date.Modified" content="2018/10/22" /><meta name="DC.Date.Modified" content="2018/11/05" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_nhs_vwx_nfb" /><title>Hotel Check Out</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018032809.  --><meta name="wh-path2root" content="../" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018032809" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script>
+
+        <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+                
+                  
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2018032809" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-117711464-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <link rel="stylesheet" type="text/css" href="../yeastar.css" /></head>
+
+    <body class="wh_topic_page frmBody" id="reference_nhs_vwx_nfb">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        <nav class="header-menu">
+                <div class="log-and-content">
+                    <div>
+                    <div class="yeastar-log"><a href="https://www.yeastar.com/" title="yeastar"></a> 
+                     <a href="https://help.yeastar.com/en/cloudpbx"> Home </a>
+                    </div>
+                                      
+                    </div>   
+                    <div class="menu-content">
+                        <ul class="content-ul">
+                           
+
+                            <li class="language"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/language-1.png"><span>English</span>
+
+                                <ul>
+                                    <li class="mask-content">
+                                        <p class="mask"></p>
+                                        <ul class="lan-select">
+                                            <li><a href="https://help.yeastar.com/en/cloudpbx">English</a></li>
+                                             <li><a href="https://help.yeastar.com/zh-cn/cloudpbx">简体中文</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                </ul>
+                           </img> </li>
+                        </ul>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            </nav>
+        
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <button class="wh_hide_highlight" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" title="Collapse sections"></button>
+                        
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Hotel Check Out</h1>
+
+    
+    
+
+<div class="body refbody"><p class="shortdesc">Through this interface, you can perform checkout for the hotel customers.</p>
+
+        <section class="section" id="reference_nhs_vwx_nfb__section_arq_lby_nfb">
+            <p class="p">After checking out through this interface, PBX will do the following operations for
+                the hotel extension:</p>
+
+            <div class="p">
+                <ul class="ul" id="reference_nhs_vwx_nfb__ul_evl_4p3_kfb">
+                    <li class="li">Empty the extension's voicemail box.</li>
+
+                    <li class="li">Delete the extension's outbound route permissions. </li>
+
+                    <li class="li">Delete the extension's alarms.</li>
+
+                    <li class="li">Reset the extension's <span class="ph uicontrol">Caller ID name</span> setting.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+    
+    
+            <section class="section" id="reference_nhs_vwx_nfb__section_off_dnd_gdb"><h2 class="title sectiontitle">Request Address </h2>
+                
+                <p class="p">https://<code class="ph codeph">{pbx domain}</code>/api/<code class="ph codeph">{api
+                        version}</code>/hotel/checkout?token=<code class="ph codeph">{token}</code></p>
+
+                
+                <div class="p">
+                    <div class="note note"><span class="notetitle">Note:</span> For the <code class="ph codeph">{api version}</code>, you should add "v"
+          before the version number, e.g. <code class="ph codeph">v1.0.5</code>.</div>
+
+                </div>
+
+            </section>
+
+            <section class="section" id="reference_nhs_vwx_nfb__section_xc5_q4d_gdb"><h2 class="title sectiontitle">Request Parameters</h2>
+                
+        <div class="p">
+            <ul class="ul" id="reference_nhs_vwx_nfb__ul_fq5_mny_nfb">
+                <li class="li">To check out multiple hotel rooms, separate the hotel extension number with
+                        comma <code class="ph codeph">,</code>, For
+                                example:<p class="p"><code class="ph codeph">{"extid":"1000,1001"}</code>.</p>
+</li>
+
+            </ul>
+
+        </div>
+
+                <div class="p">
+                    
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_nhs_vwx_nfb__table_abq_pvd_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:18.63560732113145%" /><col style="width:12.479201331114808%" /><col style="width:8.31946755407654%" /><col style="width:60.56572379367721%" /></colgroup><thead class="thead" style="text-align:left;">
+                                <tr>
+                                    <th class="entry cellrowborder" id="d27297e128">Name</th>
+
+                                    <th class="entry cellrowborder" id="d27297e131">Importance</th>
+
+                                    <th class="entry cellrowborder" id="d27297e134"> Type</th>
+
+                                    <th class="entry cellrowborder" id="d27297e137"> Description</th>
+
+                                </tr>
+
+                            </thead>
+<tbody class="tbody">
+                                <tr>
+                                    <td class="entry cellrowborder" headers="d27297e128 "><code class="ph codeph">extid</code></td>
+
+                                    <td class="entry cellrowborder" headers="d27297e131 ">Required</td>
+
+                                    <td class="entry cellrowborder" headers="d27297e134 ">Int</td>
+
+                                    <td class="entry cellrowborder" headers="d27297e137 ">The hotel extension number.</td>
+
+                                </tr>
+
+                            </tbody>
+</table>
+</div>
+
+                </div>
+
+            </section>
+
+            <section class="section" id="reference_nhs_vwx_nfb__section_lv1_syk_gdb"><h2 class="title sectiontitle">Response Parameters</h2>
+                
+                <div class="p">
+                    
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_nhs_vwx_nfb__table_xwb_syk_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:10.288065843621402%" /><col style="width:12.86008230452675%" /><col style="width:12.34567901234568%" /><col style="width:64.50617283950618%" /></colgroup><thead class="thead" style="text-align:left;">
+                                <tr>
+                                    <th class="entry cellrowborder" id="d27297e189">Name</th>
+
+                                    <th class="entry cellrowborder" id="d27297e192">Importance</th>
+
+                                    <th class="entry cellrowborder" id="d27297e195">Type</th>
+
+                                    <th class="entry cellrowborder" id="d27297e198">Description</th>
+
+                                </tr>
+
+                            </thead>
+<tbody class="tbody">
+                                <tr>
+                                    <td class="entry cellrowborder" headers="d27297e189 "><code class="ph codeph">status</code></td>
+
+                                    <td class="entry cellrowborder" headers="d27297e192 ">Required</td>
+
+                                    <td class="entry cellrowborder" headers="d27297e195 ">String</td>
+
+                                    <td class="entry cellrowborder" headers="d27297e198 ">Request result:<ul class="ul" id="reference_nhs_vwx_nfb__ul_hfl_12r_52b2">
+                                            <li class="li">Success.</li>
+
+                                            <li class="li">Failed.</li>
+
+                                        </ul>
+</td>
+
+                                </tr>
+
+                            </tbody>
+</table>
+</div>
+
+                </div>
+
+            </section>
+
+    <section class="section" id="reference_nhs_vwx_nfb__section_ksn_f4d_gdb"><h2 class="title sectiontitle">Examples</h2><strong class="ph b">Request Example</strong><div class="p">Check out the hotel room 4003.<pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"extid"</span>: <span class="hl-string" style="color:#2a00ff">"4003"</span>
+}</pre></div>
+<strong class="ph b">Response
+                    Example</strong><p class="p">Check out successfully.</p>
+<div class="p">
+                        <pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"status"</span>: <span class="hl-string" style="color:#2a00ff">"Success"</span>
+}</pre>
+                </div>
+</section>
+
+</div>
+
+</article></main></div>
+
+
+
+
+  
+
+
+
+
+                        
+                        
+<!-- 添加facebook -->
+<div id="fb-root"></div>
+<script>
+ <!-- 
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ -->
+</script>
+
+<div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-md hidden-sm hidden-xs navbar hidden-print"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"></li><li class="section-item"><div class="section-title"><a href="#reference_nhs_vwx_nfb__section_off_dnd_gdb" data-tocid="reference_nhs_vwx_nfb__section_off_dnd_gdb">Request Address </a></div></li><li class="section-item"><div class="section-title"><a href="#reference_nhs_vwx_nfb__section_xc5_q4d_gdb" data-tocid="reference_nhs_vwx_nfb__section_xc5_q4d_gdb">Request Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_nhs_vwx_nfb__section_lv1_syk_gdb" data-tocid="reference_nhs_vwx_nfb__section_lv1_syk_gdb">Response Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_nhs_vwx_nfb__section_ksn_f4d_gdb" data-tocid="reference_nhs_vwx_nfb__section_ksn_f4d_gdb">Examples</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    <div class="footer-content">
+                <div class="content-area">
+                    <div class="footer-left">
+                            <span class="copy">Copyright 2006-2018 Yeastar Information Technology Co., Ltd.</span>
+                            <span class="contacts-nav">
+                                                      <a href="https://www.yeastar.com/legal/">Terms of Use </a>|
+                                                     <a href="https://www.yeastar.com/privacy/">Privacy Policy </a>|
+                                                     <a href="https://www.yeastar.com/cookie-policy/">Cookie Policy </a></span>
+                    </div>
+                    <div class="footer-right">
+                        <div class="right-content">
+                            <a href="https://support.yeastar.com/hc/en-us/community/topics" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/community.png" /> Community</a>
+                            <a href="https://support.yeastar.com/hc/en-us/requests/new" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/support.png" /> Support</a><a href="https://github.com/Yeastar-Document/en_cloudpbx/issues" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/feedback-1.png" /> Feedback</a>
+                        </div>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
+            </div>
+  </div>
+</nav>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <div style="display:none"> <script src="https://s95.cnzz.com/z_stat.php?id=5336919&amp;web_id=5336919/" language="JavaScript"></script></div>
+    </body>
+</html>

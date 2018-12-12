@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Query Trunk List","shortdesc":"\n                  <p class=\"shortdesc\">Query basic information like trunk name, trunk status, trunk type, etc. of all     trunks.</p>\n               ","id":"reference_w23_cs2_gdb","href":"topic\/api_query_trunk_list.html","menu": {"hasChildren":false,},"tocID":"reference_w23_cs2_gdb-d46e25584","topics":[]}]});

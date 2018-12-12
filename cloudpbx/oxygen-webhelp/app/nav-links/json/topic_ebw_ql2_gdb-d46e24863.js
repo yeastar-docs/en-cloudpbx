@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Query PBX Information","shortdesc":"\n                  <p class=\"shortdesc\">Query PBX information, such as firmware version, system time, etc.</p>\n               ","id":"reference_qbg_5l2_gdb","href":"topic\/api_query_pbx_information.html","menu": {"hasChildren":false,},"tocID":"reference_qbg_5l2_gdb-d46e24933","topics":[]}]});

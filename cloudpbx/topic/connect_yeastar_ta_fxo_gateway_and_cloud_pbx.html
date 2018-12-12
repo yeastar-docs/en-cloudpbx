@@ -1,0 +1,555 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../favicon.jpg"><!----></link><link rel="icon" href="../favicon.jpg"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="topic" /><meta name="DC.Title" content="Interconnect Yeastar Cloud PBX and TA FXO Gateway" /><meta name="abstract" content="Interconnect Yeastar Cloud PBX and Yeastar TA FXO gateway to extend analog FXO trunks." /><meta name="description" content="Interconnect Yeastar Cloud PBX and Yeastar TA FXO gateway to extend analog FXO trunks." /><meta name="DC.Relation" scheme="URI" content="../topic/interconnection.html" /><meta name="DC.Contributor" content="Carol" /><meta name="DC.Creator" content="Carol" /><meta name="DC.Date.Modified" content="2018/05/21" /><meta name="DC.Date.Modified" content="2018/05/28" /><meta name="DC.Date.Modified" content="2018/05/30" /><meta name="DC.Date.Modified" content="2018/06/01" /><meta name="DC.Date.Modified" content="2018/06/05" /><meta name="DC.Date.Modified" content="2018/06/06" /><meta name="DC.Date.Modified" content="2018/06/07" /><meta name="DC.Date.Modified" content="2018/06/08" /><meta name="DC.Date.Modified" content="2018/06/11" /><meta name="DC.Date.Modified" content="2018/06/13" /><meta name="DC.Date.Modified" content="2018/06/14" /><meta name="DC.Date.Modified" content="2018/06/27" /><meta name="DC.Date.Modified" content="2018/07/23" /><meta name="DC.Date.Modified" content="2018/07/26" /><meta name="DC.Date.Modified" content="2018/07/27" /><meta name="DC.Date.Modified" content="2018/08/31" /><meta name="DC.Date.Modified" content="2018/09/03" /><meta name="DC.Date.Modified" content="2018/09/05" /><meta name="DC.Date.Modified" content="2018/09/11" /><meta name="DC.Date.Modified" content="2018/09/12" /><meta name="DC.Date.Modified" content="2018/10/09" /><meta name="DC.Date.Modified" content="2018/10/16" /><meta name="DC.Date.Modified" content="2018/10/17" /><meta name="DC.Date.Modified" content="2018/10/25" /><meta name="DC.Date.Modified" content="2018/11/26" /><meta name="DC.Date.Modified" content="2018/12/06" /><meta name="DC.Date.Modified" content="2018/12/12" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="topic_fyg_jh4_1fb" /><title>Interconnect Yeastar Cloud PBX and TA FXO Gateway</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018032809.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="topic_fyg_jh4_1fb-d46e23910" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018032809" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script>
+
+        <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+                
+                  
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2018032809" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-117711464-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <link rel="stylesheet" type="text/css" href="../yeastar.css" /></head>
+
+    <body class="wh_topic_page frmBody" id="topic_fyg_jh4_1fb">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        <nav class="header-menu">
+                <div class="log-and-content">
+                    <div>
+                    <div class="yeastar-log"><a href="https://www.yeastar.com/" title="yeastar"></a> 
+                     <a href="https://help.yeastar.com/en/cloudpbx"> Home </a>
+                    </div>
+                                      
+                    </div>   
+                    <div class="menu-content">
+                        <ul class="content-ul">
+                           
+
+                            <li class="language"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/language-1.png"><span>English</span>
+
+                                <ul>
+                                    <li class="mask-content">
+                                        <p class="mask"></p>
+                                        <ul class="lan-select">
+                                            <li><a href="https://help.yeastar.com/en/cloudpbx">English</a></li>
+                                             <li><a href="https://help.yeastar.com/zh-cn/cloudpbx">简体中文</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                </ul>
+                           </img> </li>
+                        </ul>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            </nav>
+        
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/interconnection.html">Interconnection</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate or interconnect  the Yeastar <span class="ph">Cloud PBX</span> with other devices or         applications.
+                  
+               </p>
+               </span></span></span></li>
+   <li class="active"><span class="topicref"><span class="title"><a href="../topic/connect_yeastar_ta_fxo_gateway_and_cloud_pbx.html">Interconnect Yeastar Cloud PBX and TA FXO Gateway</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Interconnect Yeastar Cloud PBX and Yeastar TA FXO gateway to extend analog FXO         trunks.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" title="Collapse sections"></button>
+                        
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul>
+   <li><span data-tocid="integration-d46e23473" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/interconnection.html">Interconnection</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate or interconnect  the Yeastar <span class="ph">Cloud PBX</span> with other devices or         applications.
+                  
+               </p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="concept_tlc_5bt_l2b-d46e23549" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/interconnect_yeastar_cloudpbx_and_s-series.html">Interconnect Yeastar Cloud PBX and S-Series VoIP PBX</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Interconnect Yeastar Cloud PBX with Yeastar S-Series VoIP PBX to make free calls         between the two PBXs and share trunks.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="concept_mvm_43k_b2b-d46e23837" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/interconnect_yeastar_cloudpbx_and_ta_fxs_gateway.html">Interconnect Yeastar Cloud PBX and TA FXS Gateway</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Interconnect Yeastar Cloud PBX and Yeastar TA FXS gateway to extend analog         phones.</p>
+                     </span></span></span></li>
+         <li class="active"><span data-tocid="topic_fyg_jh4_1fb-d46e23910" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/connect_yeastar_ta_fxo_gateway_and_cloud_pbx.html">Interconnect Yeastar Cloud PBX and TA FXO Gateway</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Interconnect Yeastar Cloud PBX and Yeastar TA FXO gateway to extend analog FXO         trunks.</p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_aqr_sv5_1fb-d46e23983" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/interconnect_yeastar_cloudpbx_and_tg_gateway.html">Interconnect Yeastar Cloud PBX and TG Gateway</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Connect Yeastar Cloud PBX and Yeastar TG gateway to extend GSM/3G/4G         trunks.</p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Interconnect Yeastar Cloud PBX and TA FXO Gateway</h1>
+
+    
+    
+    <div class="body"><p class="shortdesc">Interconnect Yeastar Cloud PBX and Yeastar TA FXO gateway to extend analog FXO
+        trunks.</p>
+
+        <p class="p">In the following instruction, we tested with Yeastar Cloud PBX version 81.6.0.3 and
+            Yeastar TA810 version 41.19.0.23.</p>
+
+        <p class="p">After connecting the Yeastar Cloud PBX and the Yeastar TA FXO gateway, the users of
+            Yeastar Cloud PBX can achieve the followings:</p>
+
+        <div class="p">
+            <ul class="ul" id="topic_fyg_jh4_1fb__ul_fgr_hjk_b2b">
+                <li class="li">Make outbound calls through FXO trunks of TA FXO gateway</li>
+
+                <li class="li">Receive inbound calls from FXO trunks of TA FXO gateway</li>
+
+            </ul>
+
+        </div>
+
+        <p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_d1g_bn4_1fb" src="../Images/integration/cloud+ta-fxo.png" /></p>
+
+        <section class="section" id="topic_fyg_jh4_1fb__section_imj_4p4_1fb"><h2 class="title sectiontitle">1. Connect Yeastar Cloud PBX and TA810</h2>
+            
+            <div class="p">
+                <ol class="ol" id="topic_fyg_jh4_1fb__ol_hyq_tp4_1fb">
+                    <li class="li">On the Yeastar Cloud PBX, create an Account Trunk.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_zv5_wq4_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Trunks</span></span>, click <span class="ph uicontrol">Add</span>.</li>
+
+                                <li class="li">Set the trunk as an Account Trunk.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_s1y_mq4_1fb" src="../Images/integration/cloud+ta810_account_trunk.png" width="650" /></p>
+<div class="p">
+                                        <ul class="ul">
+                                            <li class="li"><span class="ph uicontrol">Name</span>: Set a name to help you
+                                                identify it.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Trunk Status</span>: Select
+                                                  <span class="ph uicontrol">Enabled</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Protocol</span>: Select
+                                                  <span class="ph uicontrol">SIP</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Trunk Type</span>: Select
+                                                  <span class="ph uicontrol">Account Trunk</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Transport</span>: Select
+                                                  <span class="ph uicontrol">UDP</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Username</span>: Use the default or
+                                                change the number.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Password</span>: Use the default or
+                                                change the password.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Authentication Name</span>: Set to
+                                                the same with <span class="ph uicontrol">Username</span>.</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and
+                                        <span class="ph uicontrol">Apply</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">On the TA810, create a register-based VoIP trunk.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_rnh_gr4_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Gateway</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">VoIP Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">VoIP Trunk</span></span>, click <span class="ph uicontrol">Add New Trunk</span>.</li>
+
+                                <li class="li">Configure the VoIP trunk.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_vlc_vr4_1fb" src="../Images/integration/cloud+ta810_register_trunk.png" /></p>
+<div class="p">
+                                        <ul class="ul" id="topic_fyg_jh4_1fb__ul_sq4_xr4_1fb">
+                                            <li class="li"><span class="ph uicontrol">Trunk Type</span>: Select
+                                                  <span class="ph uicontrol">Trunk</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Type</span>: Select
+                                                  <span class="ph uicontrol">SIP</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Provider Name</span>: Set the trunk
+                                                name.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Hostname/IP</span>: Enter the domain
+                                                or IP address of the PBX; Enter the SIP port.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Domain</span>: Enter the domain or
+                                                IP address of the PBX.</li>
+
+                                            <li class="li"><span class="ph uicontrol">User Name</span>: Enter the
+                                                  <span class="ph uicontrol">Username</span> of Account Trunk
+                                                that is created on the PBX.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Authorization Name</span>: Enter the
+                                                  <span class="ph uicontrol">Authentication Name</span> of
+                                                Account Trunk that is created on the PBX.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Password</span>: Enter the
+                                                  <span class="ph uicontrol">Password</span> of Account Trunk
+                                                that is created on the PBX.</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and <span class="ph uicontrol">Apply
+                                        Changes</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">Check the connection status.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_wm3_vs4_1fb">
+                                <li class="li">On the TA810, go to <span class="ph menucascade"><span class="ph uicontrol">Status</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">System Status</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Port/Trunk Status</span></span> to check the trunk status.<p class="p">If the connection is
+                                        successful, the status will show "Registered".</p>
+<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_cpm_rt4_1fb" src="../Images/integration/cloud+ta810_voip_trunk_status.png" width="700" /></p>
+</li>
+
+                                <li class="li">On the Yeastar Cloud PBX, go to <span class="ph uicontrol">PBX
+                                        Monitor</span> to check the trunk status. If
+                                        the connection is successful, the status will show <img class="image" id="topic_fyg_jh4_1fb__image_bv2_t5k_p2b" src="../Images/ui_icons/ok.png" width="20" />.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_fsh_d54_1fb" src="../Images/integration/cloud+ta810_account_trunk_status.png" width="700" /></p>
+</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="topic_fyg_jh4_1fb__section_qvx_j54_1fb"><h2 class="title sectiontitle">2. Make Outbound Calls Through FXO Trunks</h2>
+            
+            <div class="p">
+                <ol class="ol" id="topic_fyg_jh4_1fb__ol_qqs_n54_1fb">
+                    <li class="li">On Yeastar Cloud PBX, create an outbound route to allow users make outbound
+                        calls through TA810.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_axy_s54_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">PBX</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Call Control</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Outbound Routes</span></span>, click <span class="ph uicontrol">Add</span>.</li>
+
+                                <li class="li">Configure the outbound route.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_qpy_4v4_1fb" src="../Images/integration/cloud+ta810_outbound_route.png" width="650" /></p>
+<div class="p">
+                                        <ul class="ul" id="topic_fyg_jh4_1fb__ul_fw2_qv4_1fb">
+                                            <li class="li"><span class="ph uicontrol">Name</span>: Set the outbound route
+                                                name.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Dial Patterns</span>: Set the dial
+                                                patterns according to your needs. <p class="p">In our
+                                                  scenario, set <span class="ph uicontrol">Patterns</span> to
+                                                  <code class="ph codeph">9.</code>, set
+                                                  <span class="ph uicontrol">Strip</span> to
+                                                  <code class="ph codeph">1</code>; users should dial prefix 9
+                                                  before the target number. For example, to call
+                                                  number 123456, you should dial 9123456.</p>
+</li>
+
+                                            <li class="li"><span class="ph uicontrol">Member Trunks</span>: Select the
+                                                trunk that is connected to TA810 to
+                                                  <span class="ph uicontrol">Selected</span> box.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Member Extensions</span>: Select
+                                                extensions to <span class="ph uicontrol">Selected</span> box.
+                                                The selected extensions can make outbound calls
+                                                through TA810.</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and
+                                        <span class="ph uicontrol">Apply</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">On TA810, set an IP-&gt;Port route to allow the PBX users make outbound calls
+                        through the FXO trunks.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_rv4_pw4_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Gateway</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Route Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">IP-&gt;Port</span></span>,  click <span class="ph uicontrol">Add IP-&gt;Port
+                                    Route</span>.</li>
+
+                                <li class="li">Configure IP-&gt;Port route.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_ykt_qx4_1fb" src="../Images/integration/cloud+ta810_ip_to_port.png" /></p>
+<div class="p">
+                                        <ul class="ul" id="topic_fyg_jh4_1fb__ul_rky_tx4_1fb">
+                                            <li class="li"><span class="ph uicontrol">Simple Mode</span>: Select
+                                                  <span class="ph uicontrol">No</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Route Name</span>: Set the route
+                                                name.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Call Source</span>: Select the trunk
+                                                that is connected to the PBX.</li>
+
+                                            <li class="li"><span class="ph uicontrol">DID Number</span>: Set to
+                                                  <code class="ph codeph">.</code> to allow users dial any
+                                                number.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Call Destination</span>: Select an
+                                                FXO port an FXO port group.</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and <span class="ph uicontrol">Apply
+                                        Changes</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">Make a call to test.<p class="p">For example, the PBX extension 1000 dials
+                            91588035242, the user 1588035242 will ring.</p>
+</li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="topic_fyg_jh4_1fb__section_jpb_my4_1fb"><h2 class="title sectiontitle">3. Receive Inbound Calls From FXO Trunks</h2>
+            
+            <div class="p">
+                <ol class="ol" id="topic_fyg_jh4_1fb__ol_j5c_py4_1fb">
+                    <li class="li">On Yeastar Cloud PBX, create an inbound route to accept incoming calls from TA810.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_vcn_sz4_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">PBX</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Call Control</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Inbound Routes</span></span>, click <span class="ph uicontrol">Add</span>.</li>
+
+                                <li class="li">Configure the inbound route.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_htb_21p_1fb" src="../Images/integration/cloud+ta810_inbound_route.png" width="650" /></p>
+<div class="p">
+                                        <ul class="ul" id="topic_fyg_jh4_1fb__ul_dwm_21p_1fb">
+                                            <li class="li"><span class="ph uicontrol">Name</span>: Set the inbound route
+                                                name.</li>
+
+                                            <li class="li"><span class="ph uicontrol">DID Pattern</span>: Set a DID
+                                                number. This DID number will be used to match the
+                                                incoming calls from TA810.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Member Trunks</span>: Select the
+                                                trunk that is connected to TA810 to
+                                                  <span class="ph uicontrol">Selected</span> box.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Destination</span>: Set a
+                                                destination for the inbound route.<p class="p">In our
+                                                  scenario, set the
+                                                  <span class="ph uicontrol">Destination</span> to an IVR. The
+                                                  PBX will route incoming calls of TA810 to the
+                                                  IVR.</p>
+</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and
+                                        <span class="ph uicontrol">Apply</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">On TA810, create a Port-&gt;IP route to route incoming calls to the PBX.<div class="p">
+                            <ol class="ol" type="a" id="topic_fyg_jh4_1fb__ol_hdh_cz4_1fb">
+                                <li class="li">Go to <span class="ph menucascade"><span class="ph uicontrol">Gateway</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Route Settings</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Port-&gt;IP/Port</span></span>, click <span class="ph uicontrol">Add Port-&gt;IP/Port
+                                        Route</span>.</li>
+
+                                <li class="li">Configure the Port-&gt;IP/Port route.<p class="p"><img class="image" id="topic_fyg_jh4_1fb__image_mn4_xlt_1fb" src="../Images/integration/cloud+ta810_port_to_ip.png" /></p>
+<div class="p">
+                                        <ul class="ul" id="topic_fyg_jh4_1fb__ul_xqx_ylt_1fb">
+                                            <li class="li"><span class="ph uicontrol">Simple Mode</span>: Select
+                                                  <span class="ph uicontrol">Yes</span>.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Route Name</span>: Set the route
+                                                name.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Call Source</span>: Select an FXO
+                                                port or an FXO port group.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Call Destination</span>: Choose the
+                                                trunk that is connected to the PBX.</li>
+
+                                            <li class="li"><span class="ph uicontrol">Hotline</span>: Enter the DID number
+                                                that is set on the PBX's inbound route.</li>
+
+                                        </ul>
+
+                                    </div>
+</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save</span> and <span class="ph uicontrol">Apply
+                                        Changes</span>.</li>
+
+                            </ol>
+
+                        </div>
+</li>
+
+                    <li class="li">Make a call to test.<p class="p">For example, the FXO trunk number is 17283733; use
+                            your mobile phone to call  17283733, you will hear the PBX's IVR
+                            prompt.</p>
+</li>
+
+                </ol>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</article></main></div>
+
+
+
+
+  
+
+
+
+
+                        
+                        
+<!-- 添加facebook -->
+<div id="fb-root"></div>
+<script>
+ <!-- 
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ -->
+</script>
+
+<div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-md hidden-sm hidden-xs navbar hidden-print"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#topic_fyg_jh4_1fb__section_imj_4p4_1fb" data-tocid="topic_fyg_jh4_1fb__section_imj_4p4_1fb">1. Connect Yeastar Cloud PBX and TA810</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_fyg_jh4_1fb__section_qvx_j54_1fb" data-tocid="topic_fyg_jh4_1fb__section_qvx_j54_1fb">2. Make Outbound Calls Through FXO Trunks</a></div></li><li class="section-item"><div class="section-title"><a href="#topic_fyg_jh4_1fb__section_jpb_my4_1fb" data-tocid="topic_fyg_jh4_1fb__section_jpb_my4_1fb">3. Receive Inbound Calls From FXO Trunks</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    <div class="footer-content">
+                <div class="content-area">
+                    <div class="footer-left">
+                            <span class="copy">Copyright 2006-2018 Yeastar Information Technology Co., Ltd.</span>
+                            <span class="contacts-nav">
+                                                      <a href="https://www.yeastar.com/legal/">Terms of Use </a>|
+                                                     <a href="https://www.yeastar.com/privacy/">Privacy Policy </a>|
+                                                     <a href="https://www.yeastar.com/cookie-policy/">Cookie Policy </a></span>
+                    </div>
+                    <div class="footer-right">
+                        <div class="right-content">
+                            <a href="https://support.yeastar.com/hc/en-us/community/topics" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/community.png" /> Community</a>
+                            <a href="https://support.yeastar.com/hc/en-us/requests/new" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/support.png" /> Support</a><a href="https://github.com/Yeastar-Document/en_cloudpbx/issues" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/feedback-1.png" /> Feedback</a>
+                        </div>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
+            </div>
+  </div>
+</nav>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <div style="display:none"> <script src="https://s95.cnzz.com/z_stat.php?id=5336919&amp;web_id=5336919/" language="JavaScript"></script></div>
+    </body>
+</html>

@@ -1,0 +1,563 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="shortcut icon" href="../favicon.jpg"><!----></link><link rel="icon" href="../favicon.jpg"><!----></link>        
+      <meta name="copyright" content="(C) Copyright 2018" /><meta name="DC.rights.owner" content="(C) Copyright 2018" /><meta name="DC.Type" content="reference" /><meta name="DC.Title" content="Make an Internal Call" /><meta name="abstract" content="Make an internal call between two extensions." /><meta name="description" content="Make an internal call between two extensions." /><meta name="DC.Relation" scheme="URI" content="../topic/api_audio_calls.html" /><meta name="DC.Contributor" content="Carol" /><meta name="DC.Contributor" content="Yeastar" /><meta name="DC.Date.Modified" content="2018/05/21" /><meta name="DC.Date.Modified" content="2018/05/28" /><meta name="DC.Date.Modified" content="2018/05/30" /><meta name="DC.Date.Modified" content="2018/06/01" /><meta name="DC.Date.Modified" content="2018/06/05" /><meta name="DC.Date.Modified" content="2018/06/06" /><meta name="DC.Date.Modified" content="2018/06/07" /><meta name="DC.Date.Modified" content="2018/06/08" /><meta name="DC.Date.Modified" content="2018/06/11" /><meta name="DC.Date.Modified" content="2018/06/13" /><meta name="DC.Date.Modified" content="2018/06/14" /><meta name="DC.Date.Modified" content="2018/06/27" /><meta name="DC.Date.Modified" content="2018/07/23" /><meta name="DC.Date.Modified" content="2018/07/26" /><meta name="DC.Date.Modified" content="2018/07/27" /><meta name="DC.Date.Modified" content="2018/08/31" /><meta name="DC.Date.Modified" content="2018/09/03" /><meta name="DC.Date.Modified" content="2018/09/05" /><meta name="DC.Date.Modified" content="2018/09/11" /><meta name="DC.Date.Modified" content="2018/09/12" /><meta name="DC.Date.Modified" content="2018/10/09" /><meta name="DC.Date.Modified" content="2018/10/16" /><meta name="DC.Date.Modified" content="2018/10/17" /><meta name="DC.Date.Modified" content="2018/10/25" /><meta name="DC.Date.Modified" content="2018/11/26" /><meta name="DC.Date.Modified" content="2018/12/06" /><meta name="DC.Date.Modified" content="2018/12/12" /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="reference_vkj_v52_gdb" /><title>Make an Internal Call</title><!--  Generated with Oxygen version 20.0-SNAPSHOT, build number 2018032809.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="reference_vkj_v52_gdb-d46e26670" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" />
+
+        <!-- Bootstrap Optional theme -->
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Template default styles  -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2018032809" />
+        
+
+        <script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script>
+
+        <script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script>
+                
+                  
+        <!-- Skin resources -->
+        <link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/oxygen.css?buildId=2018032809" />
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-117711464-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <link rel="stylesheet" type="text/css" href="../yeastar.css" /></head>
+
+    <body class="wh_topic_page frmBody" id="reference_vkj_v52_gdb">
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        <nav class="header-menu">
+                <div class="log-and-content">
+                    <div>
+                    <div class="yeastar-log"><a href="https://www.yeastar.com/" title="yeastar"></a> 
+                     <a href="https://help.yeastar.com/en/cloudpbx"> Home </a>
+                    </div>
+                                      
+                    </div>   
+                    <div class="menu-content">
+                        <ul class="content-ul">
+                           
+
+                            <li class="language"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/language-1.png"><span>English</span>
+
+                                <ul>
+                                    <li class="mask-content">
+                                        <p class="mask"></p>
+                                        <ul class="lan-select">
+                                            <li><a href="https://help.yeastar.com/en/cloudpbx">English</a></li>
+                                             <li><a href="https://help.yeastar.com/zh-cn/cloudpbx">简体中文</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                </ul>
+                           </img> </li>
+                        </ul>
+                        <div class="clear-both"></div>
+                    </div>
+                </div>
+            </nav>
+        
+
+        <div class=" wh_search_input "><form id="searchForm" method="get" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" /><button type="submit" class="wh_search_button"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="../index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api.html">API Guide</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate a third-party software to the PBX via API interfaces.</p>
+               </span></span></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api_interfaces.html">API Interfaces</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API interfaces and API samples.</p>
+               </span></span></span></li>
+   <li><span class="topicref"><span class="title"><a href="../topic/api_audio_calls.html">Audio Calls</a></span></span></li>
+   <li class="active"><span class="topicref"><span class="title"><a href="../topic/api_make_an_internal_call.html">Make an Internal Call</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Make an internal call between two extensions.</p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <button class="wh_hide_highlight" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" title="Collapse sections"></button>
+                        
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul>
+   <li><span data-tocid="concept_u13_lwz_xdb-d46e24058" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api.html">API Guide</a><span class="wh-tooltip">
+               
+               <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Integrate a third-party software to the PBX via API interfaces.</p>
+               </span></span></span><ul class="nav nav-list">
+         <li><span data-tocid="concept_dxf_gr2_h2b-d46e24131" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/change_logs_of_api_version_cloud.html">Change Logs of API Version</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">When sending an API request, the request address must include the API version. All         request samples in this guide use
+                        {api version} to represent the API version.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_l4v_hrc_gdb-d46e24204" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_introduction.html">API Introduction</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc"><span class="ph">Yeastar Cloud PBX</span> provides API interfaces for you to integrate a third-party     software or device.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_qt2_332_gdb-d46e24504" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_interfaces.html">API Interfaces</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API interfaces and API samples.</p>
+                     </span></span></span><ul class="nav nav-list">
+               <li><span data-tocid="topic_ex2_pld_gdb-d46e24577" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_authentication.html">API Authentication</a></span></span></li>
+               <li><span data-tocid="topic_ebw_ql2_gdb-d46e24863" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_system.html">System</a></span></span></li>
+               <li><span data-tocid="topic_yx3_gp2_gdb-d46e25006" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_extension.html">Extension</a></span></span></li>
+               <li><span data-tocid="topic_f1s_hp2_gdb-d46e25514" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_trunk.html">Trunk</a></span></span></li>
+               <li><span data-tocid="topic_ip5_kp2_gdb-d46e25657" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_ivr.html">IVR</a></span></span></li>
+               <li><span data-tocid="topic_er2_mp2_gdb-d46e25873" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_queue.html">Queue</a></span></span></li>
+               <li><span data-tocid="topic_cf5_4p2_gdb-d46e26454" class="topicref" data-state="expanded"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_audio_calls.html">Audio Calls</a></span></span><ul class="nav nav-list">
+                     <li><span data-tocid="reference_a5v_rt2_gdb-d46e26524" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_query_inbound_calls.html">Query Inbound Calls</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Get detailed information like caller, callee, call status, etc. of the active inbound     calls of the PBX.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_lpp_5t2_gdb-d46e26597" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_query_outbound_calls.html">Query Outbound Calls</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Get detailed information like caller, callee, call status, etc. of all calls dialing     out via the trunks of the PBX.</p>
+                                 </span></span></span></li>
+                     <li class="active"><span data-tocid="reference_vkj_v52_gdb-d46e26670" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_make_an_internal_call.html">Make an Internal Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Make an internal call between two extensions.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_idv_w52_gdb-d46e26743" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_make_an_outbound_call.html">Make an Outbound Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Make an outbound call from an extension through a trunk of the PBX.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_tqd_wt2_gdb-d46e26816" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_disconnect_an_extension_call.html">Disconnect an Extension's Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Disconnect an ongoing call of a specific extension.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_igq_b52_gdb-d46e26889" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_disconnect_an_inbound_call.html">Disconnect an Inbound Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Disconnect an active inbound call.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_nbm_252_gdb-d46e26962" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_disconnect_an_outbound_call.html">Disconnect an Outbound Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Disconnect an active outbound call.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_pqp_352_gdb-d46e27035" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_hold_a_call.html">Hold a Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Put an active call on hold.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_fyx_j52_gdb-d46e27108" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_resume_a_held_call.html">Resume a Held Call</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, developers can resume the held call.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_cby_l52_gdb-d46e27181" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_mute_an_extension.html">Mute an Extension</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">After muting an extension, other users could not hear the voice of the muted extension     user.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_myg_n52_gdb-d46e27255" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_unmute_an_extension.html">Unmute an Extension</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Unmute a muted extension. </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_t54_q52_gdb-d46e27328" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_listen_monitor.html">Listen Monitor</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, an extension can monitor another extension's call in Listen     mode.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_gzd_s52_gdb-d46e27401" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_whisper_monitor.html">Whisper Monitor</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, an extension can monitor another extension's call in Whisper     mode. As a result, the monitor and
+                                    the monitored extension can talk to each other, but the other     party in the call can talk to the monitor.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_g2n_t52_gdb-d46e27474" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_barge-in_monitor.html">Barge-in Monitor</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, an extension can barge in another extension's call. As a     result, all the three parties can talk
+                                    to each other.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_ymz_xpx_nfb-d46e27547" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_transfer_inbound_calls.html">Transfer Inbound Calls</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, an inbound call from the PBX's trunk can be transferred to an         extension, IVR, queue, ring
+                                    group, or an external number.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_aqt_fqx_nfb-d46e27620" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_transfer_outbound_calls.html">Transfer Outbound Calls</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, an outbound call from the PBX's trunk can be transferred to         an extension, IVR, queue, ring
+                                    group, or an external number.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_rwt_kw2_gdb-d46e27693" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_call_an_extension_via_ivr.html">Call an Extension via IVR</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will call to an extension via IVR to play the voice alarm.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_qvw_mw2_gdb-d46e27766" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_call_an_external_number_via_ivr.html">Call an External Number via IVR</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will call to an external number via IVR to play the voice alarm.</p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_jgb_vx2_gdb-d46e27839" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_auto_dial_queue.html">Auto Dial (Queue)</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will dial contact number automatically, after the call is answered, the PBX     will initiate the call to the Queue
+                                    agents.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_mz2_zh2_hdb-d46e27912" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_auto_dial_ringgroup.html">Auto Dial (Ring Group)</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will dial contact number automatically, after the call is answered, the PBX     will initiate the call to the Ring
+                                    Group members.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_ozd_dy2_gdb-d46e27985" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_call_back.html">Call Back</a><span class="wh-tooltip">
+                                 
+                                 <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, the PBX will dial two external numbers consecutively, and the     two numbers could be connected with
+                                    the PBX as the transit stop.
+                                    
+                                 </p>
+                                 </span></span></span></li>
+                     <li><span data-tocid="reference_wrf_jy2_gdb-d46e28059" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_control_inbound_calls.html">Control Inbound Calls</a></span></span></li>
+                  </ul>
+               </li>
+               <li><span data-tocid="topic_kwp_npx_nfb-d46e28275" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_play_prompts.html">Play Prompts</a></span></span></li>
+               <li><span data-tocid="topic_bb1_3q2_gdb-d46e28491" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_get_recording_files.html">Get Recording Files</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">Through this interface, you can get auto recording files of the PBX.</p>
+                           </span></span></span></li>
+               <li><span data-tocid="topic_xxd_nq2_gdb-d46e28564" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_save_and_apply_settings.html">Save and Apply Settings</a><span class="wh-tooltip">
+                           
+                           <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">By default, when you configure the PBX settings via API interfaces, the settings will     be saved and applied automatically.
+                              To avoid that the changed settings not being applied, you     can invoke this interface to apply all settings after all settings
+                              are configured.
+                              
+                           </p>
+                           </span></span></span></li>
+            </ul>
+         </li>
+         <li><span data-tocid="topic_dsn_qq2_gdb-d46e28637" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_system_report.html">System Report</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will send report to the application server automatically when there is a change     of system configuration or extension
+                        status, etc.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="topic_wwt_sq2_gdb-d46e28923" class="topicref" data-state="not-ready"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_call_report.html">Call Report</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">The PBX will send call report to the application server automatically. Call event like     call transfer, call failure, call
+                        released, etc. will be reported.
+                        
+                     </p>
+                     </span></span></span></li>
+         <li><span data-tocid="reference_rbf_yq2_gdb-d46e29943" class="topicref" data-state="leaf"><span class="wh-expand-btn"></span><span class="title"><a href="../topic/api_error_code.html">Error Code</a><span class="wh-tooltip">
+                     
+                     <p xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="shortdesc">References of API error codes.</p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-9 col-xs-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Make an Internal Call</h1>
+
+  
+  
+  <div class="body refbody"><p class="shortdesc">Make an internal call between two extensions.</p>
+
+    <section class="section" id="reference_vkj_v52_gdb__section_frq_wj2_gdb">
+      <p class="p">Send the request to make extension A dial extension B. Extension A will ring first,
+        extension B will ring after extension A picks up the call. </p>
+
+      <p class="p">If <code class="ph codeph">autoanswer</code> is set to <code class="ph codeph">yes</code>, extension A (the calling
+        party) will hear the ring back tone, extension B (the called party) will hear the
+        ringing.</p>
+
+    </section>
+
+    <section class="section" id="reference_vkj_v52_gdb__section_off_dnd_gdb"><h2 class="title sectiontitle">Request Address </h2>
+      
+      <p class="p">https://<code class="ph codeph">{pbx domain}</code>/api/<code class="ph codeph">{api
+          version}</code>/extension/dial_extension?token=<code class="ph codeph">{token}</code></p>
+
+      
+      <div class="p">
+        <div class="note note"><span class="notetitle">Note:</span> For the <code class="ph codeph">{api version}</code>, you should add "v"
+          before the version number, e.g. <code class="ph codeph">v1.0.5</code>.</div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="reference_vkj_v52_gdb__section_xc5_q4d_gdb"><h2 class="title sectiontitle">Request Parameters</h2>
+      
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_vkj_v52_gdb__table_abq_pvd_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:15.032679738562091%" /><col style="width:12.200435729847497%" /><col style="width:10.893246187363834%" /><col style="width:61.87363834422658%" /></colgroup><thead class="thead" style="text-align:left;">
+              <tr>
+                <th class="entry cellrowborder" id="d33346e154">Name</th>
+
+                <th class="entry cellrowborder" id="d33346e157">Importance</th>
+
+                <th class="entry cellrowborder" id="d33346e160"> Type</th>
+
+                <th class="entry cellrowborder" id="d33346e163"> Description</th>
+
+              </tr>
+
+            </thead>
+<tbody class="tbody">
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e154 "><code class="ph codeph"> caller </code></td>
+
+                <td class="entry cellrowborder" headers="d33346e157 ">Required</td>
+
+                <td class="entry cellrowborder" headers="d33346e160 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e163 ">The caller extension.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e154 "><code class="ph codeph">callee</code></td>
+
+                <td class="entry cellrowborder" headers="d33346e157 ">Required</td>
+
+                <td class="entry cellrowborder" headers="d33346e160 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e163 ">The called extension.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e154 "><code class="ph codeph">autoanswer</code></td>
+
+                <td class="entry cellrowborder" headers="d33346e157 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d33346e160 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e163 ">Whether to auto answer the call or not. This parameter requires the SIP phone
+                  to support. <ul class="ul" id="reference_vkj_v52_gdb__ul_uzm_5lm_gdb">
+                    <li class="li">yes</li>
+
+                    <li class="li">no</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+            </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="reference_vkj_v52_gdb__section_lv1_syk_gdb"><h2 class="title sectiontitle">Response Parameters</h2>
+      
+      <div class="p">
+        
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" id="reference_vkj_v52_gdb__table_xwb_syk_gdb" class="table" frame="border" border="1" rules="all"><colgroup><col style="width:10.288065843621402%" /><col style="width:12.86008230452675%" /><col style="width:12.34567901234568%" /><col style="width:64.50617283950618%" /></colgroup><thead class="thead" style="text-align:left;">
+              <tr>
+                <th class="entry cellrowborder" id="d33346e255">Name</th>
+
+                <th class="entry cellrowborder" id="d33346e258">Importance</th>
+
+                <th class="entry cellrowborder" id="d33346e261">Type</th>
+
+                <th class="entry cellrowborder" id="d33346e264">Description</th>
+
+              </tr>
+
+            </thead>
+<tbody class="tbody">
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e255 "><code class="ph codeph">status</code></td>
+
+                <td class="entry cellrowborder" headers="d33346e258 ">Required</td>
+
+                <td class="entry cellrowborder" headers="d33346e261 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e264 ">Request result:<ul class="ul" id="reference_vkj_v52_gdb__ul_hfl_12r_52b">
+                    <li class="li">Failed.</li>
+
+                    <li class="li">Success.</li>
+
+                  </ul>
+</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" colspan="4" headers="d33346e255 d33346e258 d33346e261 d33346e264 ">Request successful</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e255 "><code class="ph codeph">callid</code></td>
+
+                <td class="entry cellrowborder" headers="d33346e258 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d33346e261 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e264 ">A unique Identifier for the call.</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" colspan="4" headers="d33346e255 d33346e258 d33346e261 d33346e264 ">Request failed</td>
+
+              </tr>
+
+              <tr>
+                <td class="entry cellrowborder" headers="d33346e255 "><code class="ph codeph">errno</code></td>
+
+                <td class="entry cellrowborder" headers="d33346e258 ">Optional</td>
+
+                <td class="entry cellrowborder" headers="d33346e261 ">String</td>
+
+                <td class="entry cellrowborder" headers="d33346e264 ">Error code.</td>
+
+              </tr>
+
+            </tbody>
+</table>
+</div>
+
+      </div>
+
+    </section>
+
+    <section class="section" id="reference_vkj_v52_gdb__section_ksn_f4d_gdb"><h2 class="title sectiontitle">Examples</h2><strong class="ph b">Request Example</strong><div class="p">Make an internal call from extension 1000 to extension
+      1002.<pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"caller"</span>: <span class="hl-string" style="color:#2a00ff">"1000"</span>,
+    <span class="hl-json_key" style="color:#7263B9">"callee"</span>: <span class="hl-string" style="color:#2a00ff">"1002"</span>,
+    <span class="hl-json_key" style="color:#7263B9">"autoanswer"</span>: <span class="hl-string" style="color:#2a00ff">"no"</span>
+}</pre></div>
+<strong class="ph b">Response
+        Example</strong><div class="p">
+          <pre class="pre codeblock language-json">{
+    <span class="hl-json_key" style="color:#7263B9">"status"</span>: <span class="hl-string" style="color:#2a00ff">"Success"</span>,
+    <span class="hl-json_key" style="color:#7263B9">"callid"</span>: <span class="hl-string" style="color:#2a00ff">"1505193218.96"</span>
+}</pre>
+      </div>
+</section>
+
+  </div>
+
+</article></main></div>
+
+
+
+
+  
+
+
+
+
+                        
+                        
+<!-- 添加facebook -->
+<div id="fb-root"></div>
+<script>
+ <!-- 
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_CN/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+ -->
+</script>
+
+<div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-md hidden-sm hidden-xs navbar hidden-print"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"></li><li class="section-item"><div class="section-title"><a href="#reference_vkj_v52_gdb__section_off_dnd_gdb" data-tocid="reference_vkj_v52_gdb__section_off_dnd_gdb">Request Address </a></div></li><li class="section-item"><div class="section-title"><a href="#reference_vkj_v52_gdb__section_xc5_q4d_gdb" data-tocid="reference_vkj_v52_gdb__section_xc5_q4d_gdb">Request Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_vkj_v52_gdb__section_lv1_syk_gdb" data-tocid="reference_vkj_v52_gdb__section_lv1_syk_gdb">Response Parameters</a></div></li><li class="section-item"><div class="section-title"><a href="#reference_vkj_v52_gdb__section_ksn_f4d_gdb" data-tocid="reference_vkj_v52_gdb__section_ksn_f4d_gdb">Examples</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> <nav class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    <div class="footer-content">
+                <div class="content-area">
+                    <div class="footer-left">
+                            <span class="copy">Copyright 2006-2018 Yeastar Information Technology Co., Ltd.</span>
+                            <span class="contacts-nav">
+                                                      <a href="https://www.yeastar.com/legal/">Terms of Use </a>|
+                                                     <a href="https://www.yeastar.com/privacy/">Privacy Policy </a>|
+                                                     <a href="https://www.yeastar.com/cookie-policy/">Cookie Policy </a></span>
+                    </div>
+                    <div class="footer-right">
+                        <div class="right-content">
+                            <a href="https://support.yeastar.com/hc/en-us/community/topics" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/community.png" /> Community</a>
+                            <a href="https://support.yeastar.com/hc/en-us/requests/new" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/support.png" /> Support</a><a href="https://github.com/Yeastar-Document/en_cloudpbx/issues" class="feedback-content"><img src="https://www.yeastar.com/wp-content/uploads/2018/06/feedback-1.png" /> Feedback</a>
+                        </div>
+                    </div>
+                    <div class="clear-float"></div>
+                </div>
+            </div>
+  </div>
+</nav>
+
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="../oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <div style="display:none"> <script src="https://s95.cnzz.com/z_stat.php?id=5336919&amp;web_id=5336919/" language="JavaScript"></script></div>
+    </body>
+</html>

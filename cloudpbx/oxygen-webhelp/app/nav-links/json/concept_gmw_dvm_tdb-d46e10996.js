@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Add a Ring Group","shortdesc":"\n                  <p class=\"shortdesc\"></p>\n               ","id":"task_nx3_tvn_4fb","href":"topic\/add_a_ring_group.html","menu": {"hasChildren":false,},"tocID":"task_nx3_tvn_4fb-d46e11067","topics":[]}]});

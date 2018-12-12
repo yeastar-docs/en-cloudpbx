@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="topic_llj_jmq_2cb" path="topic/introduction-cloud.html"/>
+   <appContext helpID="concept_kpg_vxs_hdb" path="topic/what_new.html"/>
+   <appContext helpID="concept_cd5_ljh_pdb" path="topic/cloudpbx_release_notes.html"/>
+   <appContext helpID="concept_p2f_ljv_1gb" path="topic/v81.8.0.4.html"/>
+   <appContext helpID="concept_dnx_mbm_l2b" path="topic/v81.7.0.15.html"/>
+   <appContext helpID="concept_kxm_pg4_m2b" path="topic/v81.6.0.3.html"/>
+   <appContext helpID="concept_ijw_dbg_f2b" path="topic/v81.5.0.7.html"/>
+   <appContext helpID="concept_mh4_g5v_wdb" path="topic/v81.4.0.14.html"/>
+   <appContext helpID="topic_shf_bp1_pdb" path="topic/v81.4.0.10.html"/>
+   <appContext helpID="topic_hh1_slj_3db" path="topic/v81.4.0.8.html"/>
+   <appContext helpID="concept_rkk_yxs_hdb" path="topic/v81.3.0.12.html"/>
+   <appContext helpID="topic_kjg_l4g_jdb" path="topic/v81.2.0.8.html"/>
+   <appContext helpID="concept_epl_53h_pdb" path="topic/cloudpbx_app_release_notes.html"/>
+   <appContext helpID="topic_z21_jfn_jdb" path="topic/release_pbx_center_cloud.html"/>
+   <appContext helpID="concept_a3h_cqv_1gb" path="topic/pbxcenter_cloud_v1.8.4.html"/>
+   <appContext helpID="topic_pyt_psb_dfb" path="topic/pbxcenter_cloud_v1.7.12.html"/>
+   <appContext helpID="concept_kkn_th4_m2b" path="topic/pbxcenter_cloud_v1.5.17.html"/>
+   <appContext helpID="concept_ndv_gch_f2b" path="topic/pbxcenter_cloud_v1.5.6.html"/>
+   <appContext helpID="topic_nn3_vvh_pdb" path="topic/pbxcenter_cloud_v1.4.6.html"/>
+   <appContext helpID="topic_nn3_vvh_pdb" path="topic/pbxcenter_cloud_v1.4.5.html"/>
+   <appContext helpID="topic_td4_3h3_pdb" path="topic/pbxcenter_cloud_v1.3.9.html"/>
+   <appContext helpID="topic_wbh_l33_pdb" path="topic/pbxcenter_cloud_v1.3.6.html"/>
+   <appContext helpID="topic_fsg_sh3_pdb" path="topic/pbxcenter_cloud_v1.2.8.html"/>
+   <appContext helpID="topic_fd3_xfn_jdb" path="topic/release_auto_provision_cloud.html"/>
+   <appContext helpID="topic_yv1_bgn_jdb" path="topic/release_linkus_server_cloud.html"/>
+   <appContext helpID="concept_ypw_trv_1gb" path="topic/release_conference_panel_cloud.html"/>
+   <appContext helpID="topic_oyv_hcx_dcb" path="topic/getting_started.html"/>
+   <appContext helpID="topic_xkm_5cx_dcb" path="topic/initial_system_setup.html"/>
+   <appContext helpID="task_e2f_tlc_2cb" path="topic/set_date&amp;time.html"/>
+   <appContext helpID="task_gns_qnc_2cb" path="topic/change_the_system_prompt.html"/>
+   <appContext helpID="task_jhk_qdx_ndb"
+               path="topic/add_trusted_ip_addresses_into_whitelist.html"/>
+   <appContext helpID="task_j5n_q4c_2cb" path="topic/set_up_extensions.html"/>
+   <appContext helpID="task_kb2_mqc_2cb" path="topic/change_extension_range.html"/>
+   <appContext helpID="task_q2n_pqc_2cb" path="topic/add_bulk_extensions.html"/>
+   <appContext helpID="task_lgk_ngd_2cb" path="topic/set_up_your_phone.html"/>
+   <appContext helpID="topic_f3p_4ld_2cb" path="topic/set_up_voip_trunks.html"/>
+   <appContext helpID="task_wbd_kkd_2cb" path="topic/set_up_a_voip_peer_trunk.html"/>
+   <appContext helpID="task_fpj_l3d_2cb" path="topic/set_up_a_voip_register_trunk.html"/>
+   <appContext helpID="task_axm_rqd_2cb" path="topic/receive_inbound_calls.html"/>
+   <appContext helpID="task_rd1_d5d_2cb" path="topic/make_outbound_calls.html"/>
+   <appContext helpID="topic_uyk_212_2cb" path="topic/work_with_linkus.html"/>
+   <appContext helpID="topic_svp_l22_2cb" path="topic/set_up_linkus_server.html"/>
+   <appContext helpID="task_xkx_s12_2cb" path="topic/enable_linkus_services_for_users.html"/>
+   <appContext helpID="task_ns5_p22_2cb" path="topic/send_linkus_emails_to_users.html"/>
+   <appContext helpID="extension_user_guide" path="topic/extension_user_guide.html"/>
+   <appContext helpID="concept_qmv_vm5_ydb" path="topic/extension_user_portal.html"/>
+   <appContext helpID="task_xdl_nxr_zcb" path="topic/log_in_extension_user_portal_cloud.html"/>
+   <appContext helpID="task_c3j_ddz_zcb" path="topic/change_your_user_login_password.html"/>
+   <appContext helpID="topic_nhd_m4n_cfb" path="topic/configure_your_extension_settings.html"/>
+   <appContext helpID="task_a5p_t5x_zcb" path="topic/modify_your_information.html"/>
+   <appContext helpID="task_nww_jp3_bfb" path="topic/log_in_linkus_via_qr_code_user.html"/>
+   <appContext helpID="task_hpq_v2k_bfb" path="topic/change_ring_time_of_your_extension.html"/>
+   <appContext helpID="task_sbd_h2z_zcb" path="topic/check_your_route_permission.html"/>
+   <appContext helpID="concept_jyf_nhl_cfb" path="topic/manage_your_presence.html"/>
+   <appContext helpID="topic_gxy_trk_bfb" path="topic/configure_your_presence_settings.html"/>
+   <appContext helpID="task_mph_zkl_cfb" path="topic/switch_your_presence_status.html"/>
+   <appContext helpID="concept_plb_dpn_cfb" path="topic/manage_calls_on_your_extension.html"/>
+   <appContext helpID="task_unb_bsl_cfb" path="topic/block_incoming_outgoing_numbers.html"/>
+   <appContext helpID="task_m2l_ckm_cfb" path="topic/add_trusted_numbers.html"/>
+   <appContext helpID="topic_utq_p52_1db" path="topic/manage_your_voicemail.html"/>
+   <appContext helpID="task_hw2_fqj_bfb" path="topic/configure_your_voicemail_settings.html"/>
+   <appContext helpID="topic_z3y_5mg_1db"
+               path="topic/check_and_manage_your_voicemail_messages.html"/>
+   <appContext helpID="topic_fgg_byg_1db" path="topic/cdr_and_one_touch_recordings.html"/>
+   <appContext helpID="task_csr_ppg_1db" path="topic/search_cdr_and_one_touch_recordings.html"/>
+   <appContext helpID="task_pdk_l3n_1db"
+               path="topic/fuzzy_search_cdr_and_one_touch_recordings.html"/>
+   <appContext helpID="task_gpz_21h_1db"
+               path="topic/download_cdr_and_one_touch_recordings.html"/>
+   <appContext helpID="topic_jy3_qwf_4db" path="topic/admin_guide.html"/>
+   <appContext helpID="topic_s5h_l4k_scb" path="topic/extensions_and_phones.html"/>
+   <appContext helpID="topic_vl2_ypk_scb" path="topic/extension_basic_setup.html"/>
+   <appContext helpID="task_kb2_mqc_2cb" path="topic/change_extension_range.html"/>
+   <appContext helpID="task_h4p_bqk_scb" path="topic/add_an_extension.html"/>
+   <appContext helpID="task_q2n_pqc_2cb" path="topic/add_bulk_extensions.html"/>
+   <appContext helpID="task_fgj_5ds_scb" path="topic/add_an_extension_group.html"/>
+   <appContext helpID="task_r4n_j4q_ldb" path="topic/send_extension_information.html"/>
+   <appContext helpID="task_fpd_q4q_ldb" path="topic/edit_email_template.html"/>
+   <appContext helpID="task_i1n_52l_scb" path="topic/import_or_export_extensions.html"/>
+   <appContext helpID="reference_sqv_4y5_4fb" path="topic/extension_advanced_settings.html"/>
+   <appContext helpID="concept_x3d_kj4_4fb" path="topic/extension_presence.html"/>
+   <appContext helpID="task_dg2_spq_5cb" path="topic/set_call_forwarding_prompt.html"/>
+   <appContext helpID="topic_tn3_1sb_5cb"
+               path="topic/activate_or_deactivate_call_forwarding.html"/>
+   <appContext helpID="topic_czp_nfn_tcb" path="topic/voicemail.html"/>
+   <appContext helpID="task_owm_rln_tcb" path="topic/enable_or_disable_voicemail.html"/>
+   <appContext helpID="task_rsm_5ln_tcb"
+               path="topic/enable_or_disable_voicemail_to_email.html"/>
+   <appContext helpID="task_lmz_rsn_tcb" path="topic/edit_voicemail_to_email_template.html"/>
+   <appContext helpID="task_qc5_sbt_tcb" path="topic/change_voicemail_greetings.html"/>
+   <appContext helpID="task_qbz_sn4_tcb" path="topic/change_voicemail_settings.html"/>
+   <appContext helpID="topic_jhd_vx1_5cb" path="topic/check_voicemail_messages.html"/>
+   <appContext helpID="topic_j4g_jx1_5cb" path="topic/voicemail_menu.html"/>
+   <appContext helpID="concept_mg2_yls_scb" path="topic/call_monitoring.html"/>
+   <appContext helpID="task_vxp_1ls_scb" path="topic/configure_monitoring_permissions.html"/>
+   <appContext helpID="concept_zrb_zgv_4fb" path="topic/extension_call_permission.html"/>
+   <appContext helpID="topic_ptv_5zb_5cb" path="topic/manually_configure_your_phones.html"/>
+   <appContext helpID="task_ml5_yvr_scb" path="topic/restrict_ip_registration.html"/>
+   <appContext helpID="task_inh_qdn_tcb" path="topic/restrict_user_agent_registration.html"/>
+   <appContext helpID="task_dbs_w1c_5cb" path="topic/register_xlite.html"/>
+   <appContext helpID="task_z15_z1c_5cb" path="topic/register_microsip.html"/>
+   <appContext helpID="task_zbg_v1c_5cb" path="topic/register_zoiper.html"/>
+   <appContext helpID="task_omw_qz3_zcb" path="topic/register_mitel.html"/>
+   <appContext helpID="task_i3x_k1c_5cb" path="topic/register_vtech.html"/>
+   <appContext helpID="task_psv_f1c_5cb" path="topic/register_yealink.html"/>
+   <appContext helpID="task_byr_t1c_5cb" path="topic/register_snom.html"/>
+   <appContext helpID="task_thh_h1c_5cb" path="topic/register_polycom.html"/>
+   <appContext helpID="task_kry_rrh_ycb" path="topic/register_fanvil.html"/>
+   <appContext helpID="task_i21_j1c_5cb" path="topic/register_panasonic.html"/>
+   <appContext helpID="task_n3s_q1c_5cb" path="topic/register_htek.html"/>
+   <appContext helpID="task_wl5_41c_5cb" path="topic/register_grandstream.html"/>
+   <appContext helpID="task_lqc_s1c_5cb" path="topic/register_alcatel.html"/>
+   <appContext helpID="task_jjb_c1c_5cb" path="topic/register_cisco.html"/>
+   <appContext helpID="concept_tny_smg_tdb" path="topic/trunk_management.html"/>
+   <appContext helpID="concept_kzd_png_tdb" path="topic/voip_trunk.html"/>
+   <appContext helpID="concept_l5v_vch_4fb" path="topic/voip_trunk_setup.html"/>
+   <appContext helpID="task_fpj_l3d_2cb" path="topic/set_up_a_voip_register_trunk.html"/>
+   <appContext helpID="task_wbd_kkd_2cb" path="topic/set_up_a_voip_peer_trunk.html"/>
+   <appContext helpID="task_gpv_3lj_dfb" path="topic/set_up_a_voip_account_trunk.html"/>
+   <appContext helpID="topic_pyd_f3t_2fb" path="topic/advanced_voip_trunk_configuration.html"/>
+   <appContext helpID="topic_ez2_k2f_2fb" path="topic/voip_trunk_codec_settings.html"/>
+   <appContext helpID="topic_hhj_wld_2fb" path="topic/voip_trunk_advanced_settings.html"/>
+   <appContext helpID="task_rrh_vgf_2fb" path="topic/set_up_dod_numbers_on_voip_trunks.html"/>
+   <appContext helpID="topic_gg2_w21_kfb" path="topic/webrtc_click_to_call.html"/>
+   <appContext helpID="topic_qwk_qrv_mfb" path="topic/set_up_webrtc_click_to_call.html"/>
+   <appContext helpID="topic_wy2_qft_tcb" path="topic/call_routes.html"/>
+   <appContext helpID="concept_a3l_4gt_tcb" path="topic/outbound_route.html"/>
+   <appContext helpID="task_az3_dht_tcb" path="topic/add_outbound_route.html"/>
+   <appContext helpID="task_bcf_1n5_tcb" path="topic/adjust_priority_of_outbound_routes.html"/>
+   <appContext helpID="concept_y3j_ns1_ydb" path="topic/dial_patterns_of_outbound_route.html"/>
+   <appContext helpID="topic_ufc_lr5_tcb" path="topic/outbound_route_examples.html"/>
+   <appContext helpID="task_fr4_nrt_tcb" path="topic/restrict_outbound_calls.html"/>
+   <appContext helpID="task_om5_xw5_tcb" path="topic/add_emergency_calls.html"/>
+   <appContext helpID="concept_gqc_fdr_5cb" path="topic/inbound_route.html"/>
+   <appContext helpID="task_v43_nfr_5cb" path="topic/add_an_inbound_route.html"/>
+   <appContext helpID="concept_wz1_lbd_sfb" path="topic/did_routing.html"/>
+   <appContext helpID="topic_fjj_vhm_vcb" path="topic/inbound_route_examples.html"/>
+   <appContext helpID="topic_p3c_cwm_vcb" path="topic/distinguish_inbound_calls.html"/>
+   <appContext helpID="task_qcb_zwm_vcb" path="topic/set_distinctive_ringtone.html"/>
+   <appContext helpID="task_elk_dzc_2db"
+               path="topic/distinguish_inbound_calls_by_dnis_name.html"/>
+   <appContext helpID="task_vxj_ypc_2db"
+               path="topic/distinguish_inbound_calls_by_caller_id.html"/>
+   <appContext helpID="concept_f3m_qyd_2db" path="topic/time_condition.html"/>
+   <appContext helpID="task_bpz_nb2_2db" path="topic/add_a_time_condition.html"/>
+   <appContext helpID="task_my2_bk2_2db" path="topic/add_a_holiday.html"/>
+   <appContext helpID="topic_yzk_f42_2db" path="topic/time_condition_examples.html"/>
+   <appContext helpID="topic_oyj_mcm_2db" path="topic/time_condition_override.html"/>
+   <appContext helpID="task_t51_jdc_pdb" path="topic/monitor_time_condition_state.html"/>
+   <appContext helpID="concept_mf5_psv_rdb" path="topic/auto_clip.html"/>
+   <appContext helpID="task_lfd_qyv_rdb" path="topic/set_up_autoclip_routes.html"/>
+   <appContext helpID="concept_wsw_kbw_rdb" path="topic/autoclip_routes_example.html"/>
+   <appContext helpID="concept_anq_5dw_rdb" path="topic/sla.html"/>
+   <appContext helpID="concept_vpg_l2w_rdb" path="topic/sla_sample_configuration.html"/>
+   <appContext helpID="concept_yxv_phw_rdb" path="topic/sla_operations.html"/>
+   <appContext helpID="concept_h3q_ppn_tdb" path="topic/adapt_caller_id.html"/>
+   <appContext helpID="topic_edt_nlm_jdb" path="topic/call_features.html"/>
+   <appContext helpID="concept_t4b_spw_rdb" path="topic/ivr.html"/>
+   <appContext helpID="task_spq_k2x_rdb" path="topic/set_up_an_ivr.html"/>
+   <appContext helpID="task_hjq_d5w_rdb" path="topic/set_an_ivr_prompt.html"/>
+   <appContext helpID="task_lyh_kzw_rdb" path="topic/change_ivr_prompt_clip.html"/>
+   <appContext helpID="task_xnw_vlg_tdb" path="topic/dial_by_name.html"/>
+   <appContext helpID="concept_gmw_dvm_tdb" path="topic/ring_group.html"/>
+   <appContext helpID="task_nx3_tvn_4fb" path="topic/add_a_ring_group.html"/>
+   <appContext helpID="concept_yn1_gvm_tdb" path="topic/queue.html"/>
+   <appContext helpID="task_jbq_dzv_d2b" path="topic/add_a_queue.html"/>
+   <appContext helpID="reference_xcs_jrn_4fb" path="topic/queue_settings.html"/>
+   <appContext helpID="task_iqr_ccl_q2b" path="topic/log_in_out_a_queue.html"/>
+   <appContext helpID="task_ytn_yds_l2b" path="topic/monitor_agent_status_by_blf.html"/>
+   <appContext helpID="concept_x1v_hvm_tdb" path="topic/conference.html"/>
+   <appContext helpID="task_rzf_mw1_wdb" path="topic/add_a_conference.html"/>
+   <appContext helpID="task_sym_yw1_wdb" path="topic/join_a_conference.html"/>
+   <appContext helpID="reference_sjy_by1_wdb" path="topic/conference_voice_menu.html"/>
+   <appContext helpID="topic_m3z_krq_bdb" path="topic/call_pickup.html"/>
+   <appContext helpID="concept_cqp_lmm_4fb" path="topic/extension_call_pickup.html"/>
+   <appContext helpID="task_egh_qgn_4fb" path="topic/pick_up_an_extension_call_by_blf.html"/>
+   <appContext helpID="concept_wsz_nmm_4fb" path="topic/group_call_pickup.html"/>
+   <appContext helpID="task_fls_t4m_4fb" path="topic/add_a_pickup_group.html"/>
+   <appContext helpID="task_xdp_t2n_4fb" path="topic/pick_up_a_group_member_call_by_blf.html"/>
+   <appContext helpID="topic_kgg_bhp_bdb" path="topic/call_transfer.html"/>
+   <appContext helpID="task_fbp_jqq_bdb" path="topic/attended_transfer.html"/>
+   <appContext helpID="task_ivh_mkp_bdb" path="topic/blind_transfer.html"/>
+   <appContext helpID="concept_pz5_qvm_tdb" path="topic/callback.html"/>
+   <appContext helpID="task_kw5_xmf_qfb" path="topic/set_up_callback.html"/>
+   <appContext helpID="concept_wf3_tvm_tdb" path="topic/speed_dial.html"/>
+   <appContext helpID="concept_qvh_vvm_tdb" path="topic/disa.html"/>
+   <appContext helpID="task_bwc_ssf_qfb" path="topic/set_up_disa.html"/>
+   <appContext helpID="topic_d1p_mbr_bdb" path="topic/one_touch_record.html"/>
+   <appContext helpID="concept_tsn_tbb_ydb" path="topic/call_recording.html"/>
+   <appContext helpID="task_f1k_kyb_ydb" path="topic/set_up_call_recording.html"/>
+   <appContext helpID="task_ovn_qjt_gfb" path="topic/pause_resume_call_recording.html"/>
+   <appContext helpID="task_ehm_4by_gfb" path="topic/monitor_call_recording_status.html"/>
+   <appContext helpID="task_j54_kvq_gfb" path="topic/auto_clean_up_recording_files.html"/>
+   <appContext helpID="topic_jhp_lml_gfb" path="topic/manage_call_recording_files.html"/>
+   <appContext helpID="task_qc5_cms_gfb"
+               path="topic/grant_recording_permissions_to_users.html"/>
+   <appContext helpID="topic_fh3_nbw_bdb" path="topic/intercom_and_paging.html"/>
+   <appContext helpID="task_a13_23p_32b" path="topic/set_1-way_paging.html"/>
+   <appContext helpID="task_xgy_3kp_32b" path="topic/set_up_2-way_intercom.html"/>
+   <appContext helpID="task_x4m_xlp_32b" path="topic/set_up_1-way_multicast_paging.html"/>
+   <appContext helpID="task_ipy_sbw_bdb" path="topic/make_an_intercom_call.html"/>
+   <appContext helpID="topic_bc2_vfr_bdb" path="topic/call_parking.html"/>
+   <appContext helpID="task_ud3_43r_bdb" path="topic/park_calls_by_blf.html"/>
+   <appContext helpID="topic_dzk_jz1_rfb" path="topic/configure_call_parking_caller_id.html"/>
+   <appContext helpID="concept_mqd_ccc_wdb" path="topic/fax.html"/>
+   <appContext helpID="concept_w2l_g22_xdb" path="topic/fax_to_email.html"/>
+   <appContext helpID="task_y3m_kxd_xdb"
+               path="topic/receive_fax_through_a_dedicated_trunk.html"/>
+   <appContext helpID="task_yzr_n12_xdb" path="topic/receive_fax_via_fax_detection.html"/>
+   <appContext helpID="task_ghr_fkv_42b" path="topic/edit_fax_to_email_template.html"/>
+   <appContext helpID="concept_zmv_4vm_tdb" path="topic/blacklist_whitelist.html"/>
+   <appContext helpID="topic_dfg_dmc_5cb" path="topic/voice_prompts.html"/>
+   <appContext helpID="topic_w3p_gmc_5cb" path="topic/system_prompt.html"/>
+   <appContext helpID="task_vfy_gsc_5cb" path="topic/change_system_prompt.html"/>
+   <appContext helpID="task_jtv_24c_5cb" path="topic/customize_system_prompt.html"/>
+   <appContext helpID="task_lmn_fvc_5cb" path="topic/change_an_extension_system_prompt.html"/>
+   <appContext helpID="topic_f1w_zwc_5cb" path="topic/music_on_hold.html"/>
+   <appContext helpID="task_j4t_1pj_5cb" path="topic/add_a_custom_moh_playlist.html"/>
+   <appContext helpID="task_vzx_pvj_5cb" path="topic/change_the_moh_playlist_dita.html"/>
+   <appContext helpID="topic_zrr_ffk_5cb" path="topic/custom_prompt.html"/>
+   <appContext helpID="concept_kwb_pyj_5cb"
+               path="topic/requirements_of_custom_audio_file.html"/>
+   <appContext helpID="task_knt_5fk_5cb" path="topic/upload_a_custom_prompt.html"/>
+   <appContext helpID="task_xp4_tgk_5cb" path="topic/record_a_custom_prompt.html"/>
+   <appContext helpID="task_jsf_n3k_5cb" path="topic/play_a_custom_prompt.html"/>
+   <appContext helpID="task_oq5_t1k_5cb" path="topic/convert_audio_files_via_wavepad.html"/>
+   <appContext helpID="task_vkr_31k_5cb" path="topic/convert_audio_files_via_online_tool.html"/>
+   <appContext helpID="task_v4s_4zq_5cb" path="topic/set_prompts_for_failed_calls.html"/>
+   <appContext helpID="concept_m3p_dgk_xdb" path="topic/system_management.html"/>
+   <appContext helpID="concept_htb_p4w_d2b" path="topic/system_general_settings.html"/>
+   <appContext helpID="concept_lfw_fpw_d2b" path="topic/system_preferences.html"/>
+   <appContext helpID="concept_mby_grw_d2b" path="topic/feature_code.html"/>
+   <appContext helpID="concept_j4g_lww_d2b" path="topic/sip_settings.html"/>
+   <appContext helpID="topic_u21_hyh_ffb" path="topic/secuirty.html"/>
+   <appContext helpID="topic_s3b_lb3_ffb" path="topic/blocked_ip_address.html"/>
+   <appContext helpID="topic_a3k_523_ffb" path="topic/service.html"/>
+   <appContext helpID="concept_ojf_43k_xdb" path="topic/user_permission.html"/>
+   <appContext helpID="task_gxc_zll_xdb" path="topic/configure_user_permission.html"/>
+   <appContext helpID="concept_a4v_p3k_xdb" path="topic/date_and_time.html"/>
+   <appContext helpID="task_fsc_1hm_xdb" path="topic/change_the_pbx_time.html"/>
+   <appContext helpID="concept_ls5_r3k_xdb" path="topic/email.html"/>
+   <appContext helpID="concept_fy5_hrr_xdb" path="topic/auto_cleanup.html"/>
+   <appContext helpID="concept_jjr_xwr_xdb" path="topic/event_center.html"/>
+   <appContext helpID="task_yn4_bq1_ydb" path="topic/add_notification_contacts.html"/>
+   <appContext helpID="topic_crk_blm_jdb" path="topic/maintenance.html"/>
+   <appContext helpID="topic_kfc_wsl_ldb" path="topic/upgrade_firmware.html"/>
+   <appContext helpID="task_jrs_jdr_ldb" path="topic/one-click_upgrade.html"/>
+   <appContext helpID="topic_npw_btl_ldb" path="topic/backup_and_restore.html"/>
+   <appContext helpID="task_d3c_djm_ldb" path="topic/create_a_backup_file.html"/>
+   <appContext helpID="task_h2n_njm_ldb" path="topic/upload_a_backup_file.html"/>
+   <appContext helpID="task_thk_gjm_ldb" path="topic/restore_a_backup_file.html"/>
+   <appContext helpID="topic_wp2_1tl_ldb" path="topic/reboot_the_pbx.html"/>
+   <appContext helpID="task_rct_ftl_ldb" path="topic/reset_the_pbx.html"/>
+   <appContext helpID="concept_ss3_3y5_ydb" path="topic/system_log.html"/>
+   <appContext helpID="concept_xq3_hqv_ydb" path="topic/operation_log.html"/>
+   <appContext helpID="concept_ahv_wrv_ydb" path="topic/troubleshooting.html"/>
+   <appContext helpID="task_ijw_jgg_4fb" path="topic/access_the_pbx_via_ssh_cloud.html"/>
+   <appContext helpID="task_pnf_wsv_ydb" path="topic/capture_ethernet_packet.html"/>
+   <appContext helpID="task_xsk_lfw_ydb" path="topic/ping_ip_address.html"/>
+   <appContext helpID="task_a1y_sjw_ydb" path="topic/trace_route.html"/>
+   <appContext helpID="concept_gl3_wt2_xdb" path="topic/pbx_monitor.html"/>
+   <appContext helpID="concept_btx_d1f_xdb" path="topic/resource_monitor.html"/>
+   <appContext helpID="topic_fgg_byg_1db" path="topic/cdr_and_recordings.html"/>
+   <appContext helpID="task_csr_ppg_1db" path="topic/search_cdr_and_recordings.html"/>
+   <appContext helpID="task_pdk_l3n_1db" path="topic/fuzzy_search_cdr_and_recordings.html"/>
+   <appContext helpID="task_gpz_21h_1db" path="topic/download_cdr_and_recordings.html"/>
+   <appContext helpID="concept_hcb_31m_zdb" path="topic/pbx_security.html"/>
+   <appContext helpID="concept_apj_qhk_zdb" path="topic/pbx_service_security.html"/>
+   <appContext helpID="concept_ixq_2hk_zdb" path="topic/web_access_security.html"/>
+   <appContext helpID="concept_ith_5xk_zdb" path="topic/extension_security.html"/>
+   <appContext helpID="concept_t3d_kgl_zdb" path="topic/trunk_security.html"/>
+   <appContext helpID="concept_fn2_2dq_zdb" path="topic/international_call_limit.html"/>
+   <appContext helpID="concept_fyf_3qz_zdb" path="topic/contingency_plan.html"/>
+   <appContext helpID="concept_m4f_rs1_5db" path="topic/app_center.html"/>
+   <appContext helpID="concept_ygx_q51_5db" path="topic/pbx_center.html"/>
+   <appContext helpID="concept_zjg_pyx_scb" path="topic/auto_provisioning.html"/>
+   <appContext helpID="reference_k41_bby_scb"
+               path="topic/supported_ip_phone_manufactures_and_phone_models_cloud.html"/>
+   <appContext helpID="task_b3f_hnq_5cb" path="topic/steps_to_auto_provision_phones.html"/>
+   <appContext helpID="task_bfh_pny_scb" path="topic/auto_provision_phone_lines.html"/>
+   <appContext helpID="task_p3g_btz_scb" path="topic/update_auto_provision_settings.html"/>
+   <appContext helpID="task_os5_5ny_scb" path="topic/auto_provision_phonebook.html"/>
+   <appContext helpID="task_b5h_tfm_tcb" path="topic/auto_provision_contacts.html"/>
+   <appContext helpID="task_elr_rny_scb" path="topic/auto_provision_phone_firmware.html"/>
+   <appContext helpID="task_z1w_c4y_scb" path="topic/synchronize_phone_time_with_the_pbx.html"/>
+   <appContext helpID="task_yj5_jrz_scb" path="topic/export_auto_provision_settings.html"/>
+   <appContext helpID="topic_ilg_lqy_scb" path="topic/auto_provisioning_template.html"/>
+   <appContext helpID="task_djh_dry_scb" path="topic/search_and_view_default_template.html"/>
+   <appContext helpID="task_hdh_rmy_scb"
+               path="topic/add_a_customized_auto_provisioning_template.html"/>
+   <appContext helpID="task_hwy_srh_5cb"
+               path="topic/add_additional_settings_in_custom_template.html"/>
+   <appContext helpID="concept_dxd_ssz_ldb" path="topic/linkus_server.html"/>
+   <appContext helpID="topic_xyn_5lr_2fb" path="topic/getting_started_with_linkus_server.html"/>
+   <appContext helpID="topic_svp_l22_2cb" path="topic/set_up_linkus_server.html"/>
+   <appContext helpID="topic_xbc_qlr_2fb" path="topic/linkus_login_information.html"/>
+   <appContext helpID="topic_j2k_nxl_2fb" path="topic/manage_linkus_service.html"/>
+   <appContext helpID="task_xkx_s12_2cb" path="topic/enable_linkus_services_for_users.html"/>
+   <appContext helpID="task_zwq_hkm_2fb" path="topic/disable_linkus_services_for_users.html"/>
+   <appContext helpID="task_ns5_p22_2cb" path="topic/send_linkus_emails_to_users.html"/>
+   <appContext helpID="task_pwp_fwm_2fb" path="topic/edit_linkus_email_template.html"/>
+   <appContext helpID="topic_a1z_lgn_2fb" path="topic/linkus_event_settings.html"/>
+   <appContext helpID="concept_agj_hk1_wdb" path="topic/conference_panel.html"/>
+   <appContext helpID="task_rzf_mw1_wdb" path="topic/add_a_conference.html"/>
+   <appContext helpID="task_ard_hz1_wdb" path="topic/add_contacts_on_conference_panel.html"/>
+   <appContext helpID="task_vrd_mdb_wdb" path="topic/invite_contacts_on_conference_panel.html"/>
+   <appContext helpID="concept_ssx_13b_wdb" path="topic/operations_on_conference_panel.html"/>
+   <appContext helpID="topic_i4f_zd1_3db" path="topic/remote_management.html"/>
+   <appContext helpID="topic_rqv_yjb_3db" path="topic/mgt_getting_started.html"/>
+   <appContext helpID="task_rxm_gpb_3db" path="topic/mgt_log_in_remote_management.html"/>
+   <appContext helpID="task_jzy_fqb_3db" path="topic/mgt_modify_your_profile.html"/>
+   <appContext helpID="task_yvq_tsb_3db" path="topic/mgt_change_login_password.html"/>
+   <appContext helpID="topic_otm_1hb_3db" path="topic/mgt_manage_devices.html"/>
+   <appContext helpID="topic_zcg_syh_3db" path="topic/mgt_manage_your_devices.html"/>
+   <appContext helpID="task_mkj_yzh_3db" path="topic/mgt_add_device.html"/>
+   <appContext helpID="task_xbn_xb3_3db"
+               path="topic/mgt_add_device_by_authentication_code.html"/>
+   <appContext helpID="task_irx_tb3_3db"
+               path="topic/mgt_add_device_by_yeastar_partner_id.html"/>
+   <appContext helpID="task_e5y_x43_3db" path="topic/mgt_check_device_information.html"/>
+   <appContext helpID="task_axj_1p3_3db"
+               path="topic/mgt_set_administrator_privilege_of_your_device.html"/>
+   <appContext helpID="task_o13_w43_3db" path="topic/mgt_visit_a_device.html"/>
+   <appContext helpID="task_pxc_cp3_3db" path="topic/mgt_delete_a_device.html"/>
+   <appContext helpID="task_thk_dp3_3db" path="topic/mgt_group_devices.html"/>
+   <appContext helpID="topic_h3l_5yh_3db" path="topic/mgt_manage_user_devices.html"/>
+   <appContext helpID="task_hd5_2r3_3db"
+               path="topic/mgt_set_administrator_privilege_of_user_device.html"/>
+   <appContext helpID="topic_omj_dhb_3db" path="topic/mgt_manage_users.html"/>
+   <appContext helpID="task_p1d_zvb_3db" path="topic/mgt_add_a_user.html"/>
+   <appContext helpID="task_pjt_mwb_3db" path="topic/mgt_delete_a_user.html"/>
+   <appContext helpID="task_hyj_4wb_3db" path="topic/mgt_enable_disable_a_user.html"/>
+   <appContext helpID="topic_ukj_w3b_3db" path="topic/mgt_maintenance.html"/>
+   <appContext helpID="reference_fnf_zqc_3db" path="topic/mgt_dashboard.html"/>
+   <appContext helpID="topic_edj_prc_3db" path="topic/mgt_alarm.html"/>
+   <appContext helpID="task_dcd_jrc_3db" path="topic/mgt_enable_disable_alarm.html"/>
+   <appContext helpID="task_irc_rvh_3db" path="topic/mgt_enable_disable_alarm_to_email.html"/>
+   <appContext helpID="task_xgw_rrc_3db" path="topic/mgt_search_alarm_logs.html"/>
+   <appContext helpID="task_a11_5rc_3db" path="topic/mgt_acknowledge_alarms.html"/>
+   <appContext helpID="topic_b21_xrc_3db" path="topic/mgt_operation_log.html"/>
+   <appContext helpID="integration" path="topic/interconnection.html"/>
+   <appContext helpID="concept_tlc_5bt_l2b"
+               path="topic/interconnect_yeastar_cloudpbx_and_s-series.html"/>
+   <appContext helpID="task_k5j_qqn_42b" path="topic/connect_yeastar_cloud_pbx_and_s300.html"/>
+   <appContext helpID="topic_evh_l1p_p2b"
+               path="topic/intercommunication_between_yeastar_cloud_pbx_and_s300.html"/>
+   <appContext helpID="topic_uj4_kfq_p2b" path="topic/share_trunk_of_yeastar_s300.html"/>
+   <appContext helpID="concept_mvm_43k_b2b"
+               path="topic/interconnect_yeastar_cloudpbx_and_ta_fxs_gateway.html"/>
+   <appContext helpID="topic_fyg_jh4_1fb"
+               path="topic/connect_yeastar_ta_fxo_gateway_and_cloud_pbx.html"/>
+   <appContext helpID="topic_aqr_sv5_1fb"
+               path="topic/interconnect_yeastar_cloudpbx_and_tg_gateway.html"/>
+   <appContext helpID="concept_u13_lwz_xdb" path="topic/api.html"/>
+   <appContext helpID="concept_dxf_gr2_h2b" path="topic/change_logs_of_api_version_cloud.html"/>
+   <appContext helpID="topic_l4v_hrc_gdb" path="topic/api_introduction.html"/>
+   <appContext helpID="concept_htc_pt2_h2b" path="topic/api_demo.html"/>
+   <appContext helpID="task_zm3_wdd_gdb" path="topic/enable_api_access_on_pbx.html"/>
+   <appContext helpID="task_wfl_k12_nfb" path="topic/api_delete_blocked_api_ip.html"/>
+   <appContext helpID="topic_qt2_332_gdb" path="topic/api_interfaces.html"/>
+   <appContext helpID="topic_ex2_pld_gdb" path="topic/api_authentication.html"/>
+   <appContext helpID="reference_blb_5ld_gdb" path="topic/api_login.html"/>
+   <appContext helpID="reference_dns_psf_hdb" path="topic/refresh_api_token.html"/>
+   <appContext helpID="reference_chw_zk2_gdb" path="topic/api_logout.html"/>
+   <appContext helpID="topic_ebw_ql2_gdb" path="topic/api_system.html"/>
+   <appContext helpID="reference_qbg_5l2_gdb" path="topic/api_query_pbx_information.html"/>
+   <appContext helpID="topic_yx3_gp2_gdb" path="topic/api_extension.html"/>
+   <appContext helpID="reference_ibj_vr2_gdb" path="topic/api_query_extension_list.html"/>
+   <appContext helpID="reference_oc5_xr2_gdb" path="topic/api_query_extension_settings.html"/>
+   <appContext helpID="reference_g3t_zr2_gdb" path="topic/api_modify_an_extension.html"/>
+   <appContext helpID="concept_klh_ysd_j2b" path="topic/api_query_voicemail.html"/>
+   <appContext helpID="concept_gsn_cm2_j2b" path="topic/api_download_voicemail.html"/>
+   <appContext helpID="concept_aw3_sc2_j2b" path="topic/api_delete_voicemail.html"/>
+   <appContext helpID="topic_f1s_hp2_gdb" path="topic/api_trunk.html"/>
+   <appContext helpID="reference_w23_cs2_gdb" path="topic/api_query_trunk_list.html"/>
+   <appContext helpID="topic_ip5_kp2_gdb" path="topic/api_ivr.html"/>
+   <appContext helpID="reference_t3n_2s2_gdb" path="topic/api_query_ivr_settings.html"/>
+   <appContext helpID="reference_yyz_gs2_gdb" path="topic/api_modify_an_ivr.html"/>
+   <appContext helpID="topic_er2_mp2_gdb" path="topic/api_queue.html"/>
+   <appContext helpID="reference_mr1_js2_gdb" path="topic/api_query_queue_settings.html"/>
+   <appContext helpID="reference_jzx_bt2_gdb" path="topic/api_modify_a_queue.html"/>
+   <appContext helpID="reference_t3d_sdf_h2b" path="topic/api_query_queue_status.html"/>
+   <appContext helpID="reference_ngn_dt2_gdb" path="topic/api_log_in_a_queue.html"/>
+   <appContext helpID="reference_a3w_ft2_gdb" path="topic/api_log_out_a_queue.html"/>
+   <appContext helpID="reference_o5r_whf_h2b" path="topic/api_pause_an_agent.html"/>
+   <appContext helpID="reference_gs5_nqf_h2b" path="topic/api_resume_an_agent.html"/>
+   <appContext helpID="topic_cf5_4p2_gdb" path="topic/api_audio_calls.html"/>
+   <appContext helpID="reference_a5v_rt2_gdb" path="topic/api_query_inbound_calls.html"/>
+   <appContext helpID="reference_lpp_5t2_gdb" path="topic/api_query_outbound_calls.html"/>
+   <appContext helpID="reference_vkj_v52_gdb" path="topic/api_make_an_internal_call.html"/>
+   <appContext helpID="reference_idv_w52_gdb" path="topic/api_make_an_outbound_call.html"/>
+   <appContext helpID="reference_tqd_wt2_gdb"
+               path="topic/api_disconnect_an_extension_call.html"/>
+   <appContext helpID="reference_igq_b52_gdb" path="topic/api_disconnect_an_inbound_call.html"/>
+   <appContext helpID="reference_nbm_252_gdb"
+               path="topic/api_disconnect_an_outbound_call.html"/>
+   <appContext helpID="reference_pqp_352_gdb" path="topic/api_hold_a_call.html"/>
+   <appContext helpID="reference_fyx_j52_gdb" path="topic/api_resume_a_held_call.html"/>
+   <appContext helpID="reference_cby_l52_gdb" path="topic/api_mute_an_extension.html"/>
+   <appContext helpID="reference_myg_n52_gdb" path="topic/api_unmute_an_extension.html"/>
+   <appContext helpID="reference_t54_q52_gdb" path="topic/api_listen_monitor.html"/>
+   <appContext helpID="reference_gzd_s52_gdb" path="topic/api_whisper_monitor.html"/>
+   <appContext helpID="reference_g2n_t52_gdb" path="topic/api_barge-in_monitor.html"/>
+   <appContext helpID="reference_ymz_xpx_nfb" path="topic/api_transfer_inbound_calls.html"/>
+   <appContext helpID="reference_aqt_fqx_nfb" path="topic/api_transfer_outbound_calls.html"/>
+   <appContext helpID="reference_rwt_kw2_gdb" path="topic/api_call_an_extension_via_ivr.html"/>
+   <appContext helpID="reference_qvw_mw2_gdb"
+               path="topic/api_call_an_external_number_via_ivr.html"/>
+   <appContext helpID="reference_jgb_vx2_gdb" path="topic/api_auto_dial_queue.html"/>
+   <appContext helpID="reference_mz2_zh2_hdb" path="topic/api_auto_dial_ringgroup.html"/>
+   <appContext helpID="reference_ozd_dy2_gdb" path="topic/api_call_back.html"/>
+   <appContext helpID="reference_wrf_jy2_gdb" path="topic/api_control_inbound_calls.html"/>
+   <appContext helpID="reference_gtw_4m2_hdb" path="topic/api_accept_inbound_calls.html"/>
+   <appContext helpID="reference_nk3_qm2_hdb" path="topic/api_refuse_inbound_calls.html"/>
+   <appContext helpID="topic_kwp_npx_nfb" path="topic/api_play_prompts.html"/>
+   <appContext helpID="reference_qgn_c1f_gdb" path="topic/api_play_prompt_to_extension.html"/>
+   <appContext helpID="reference_ync_21f_gdb"
+               path="topic/api_play_prompt_to_external_number.html"/>
+   <appContext helpID="topic_bb1_3q2_gdb" path="topic/api_get_recording_files.html"/>
+   <appContext helpID="topic_xxd_nq2_gdb" path="topic/api_save_and_apply_settings.html"/>
+   <appContext helpID="topic_dsn_qq2_gdb" path="topic/api_system_report.html"/>
+   <appContext helpID="reference_lgt_lcf_gdb" path="topic/api_report_of_system_startup.html"/>
+   <appContext helpID="reference_oyn_ncf_gdb" path="topic/api_report_of_changed_settings.html"/>
+   <appContext helpID="reference_c12_pcf_gdb"
+               path="topic/api_report_of_changed_extension_status.html"/>
+   <appContext helpID="topic_wwt_sq2_gdb" path="topic/api_call_report.html"/>
+   <appContext helpID="reference_b5k_hdf_gdb" path="topic/api_ringing.html"/>
+   <appContext helpID="reference_gtg_3df_gdb" path="topic/api_ring_back.html"/>
+   <appContext helpID="reference_e3y_5v3_gdb" path="topic/api_answer_a_call.html"/>
+   <appContext helpID="reference_ozw_wv3_gdb" path="topic/api_call_answered.html"/>
+   <appContext helpID="reference_ty3_yv3_gdb" path="topic/api_call_released.html"/>
+   <appContext helpID="reference_cpy_zv3_gdb" path="topic/api_call_transfer.html"/>
+   <appContext helpID="reference_bpk_bw3_gdb" path="topic/api_call_failure.html"/>
+   <appContext helpID="reference_yl2_dw3_gdb" path="topic/api_inbound_call_request.html"/>
+   <appContext helpID="reference_zcj_fw3_gdb" path="topic/api_keypress.html"/>
+   <appContext helpID="reference_imy_gw3_gdb" path="topic/api_cdr.html"/>
+   <appContext helpID="reference_gkj_3w3_gdb" path="topic/api_inbound_call.html"/>
+   <appContext helpID="reference_hdx_kw3_gdb" path="topic/api_prompt_play_end.html"/>
+   <appContext helpID="reference_qng_qw3_gdb"
+               path="topic/api_customer_satisfacation_suvery_result.html"/>
+   <appContext helpID="reference_rbf_yq2_gdb" path="topic/api_error_code.html"/>
+   <appContext helpID="reference" path="topic/references.html"/>
+   <appContext helpID="reference_hpp_cqj_z2b"
+               path="topic/parameter_descriptions_of_import_files.html"/>
+   <appContext helpID="reference_pq4_yzh_mfb"
+               path="references/import_parameters_extensions.html"/>
+   <appContext helpID="reference_g3l_3f3_mfb" path="references/import_parameters_trunks.html"/>
+   <appContext helpID="reference_zrm_gj3_mfb"
+               path="references/import_parameters_inbound_routes.html"/>
+   <appContext helpID="reference_b4g_lj3_mfb"
+               path="references/import_parameters_outbound_routes.html"/>
+   <appContext helpID="reference_mjx_mk3_mfb"
+               path="references/import_parameters_blacklist_whitelist.html"/>
+   <appContext helpID="reference_xsg_qk3_mfb"
+               path="references/import_parameters_speed_dial.html"/>
+</map>
